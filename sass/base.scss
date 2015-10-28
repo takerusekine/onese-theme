@@ -1,0 +1,371 @@
+@charset 'UTF-8';
+@import 'compass';
+@import 'compass/reset';
+$rootfontsize: 16px;
+$colorvar-black: #111;
+$img-path: '../images/';
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+html {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: $rootfontsize;
+}
+body {
+  margin: 0 auto;
+  max-width: 2560px;
+  width: 100%;
+  * {
+    font-weight: 200;
+  }
+}
+.articlewrap {
+  margin: 0 auto;
+  width: 960px;
+}
+.entry-title {
+  margin: 0;
+  font-size: 2rem;
+  padding-top: 30px;
+}
+.ct-name {
+  border-bottom: 1px solid $colorvar-black;
+  display: block;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  width: 95%;
+  margin: 50px auto 0;
+}
+.corp-table {
+  width: 95%;
+  border-style: none;
+  margin: 0 auto 30px;
+}
+.ct-body {
+  width: 100%;
+  tr {
+    height: 50px;
+    width: 100%;
+    th {
+      font-size: 1.2rem;
+      line-height: 100%;
+      width: 30%;
+      padding: 10px;
+    }
+    td {
+      font-size: 1.2rem;
+      line-height: 100%;
+      width: 70%;
+      padding: 10px;
+    }
+  }
+}
+.officers-profile {
+  margin-top: 30px;
+  width: 100%;
+  .officers-list {
+    width: 100%;
+    .o_list_element {
+      border-bottom: 1px solid #ccc;
+      height: 400px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+.officer-text {
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  p {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+}
+.officers_img {
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+.officers_name {
+  display: block;
+  font-size: 2rem;
+}
+.officers_subname {
+  color: #777;
+  display: block;
+  font-size: 0.8rem;
+}
+.officers_position {
+  display: block;
+  font-size: 1rem;
+}
+@for $value from 1 through 3 {
+  .o_img_#{$value} {
+    background-image: url("#{$img-path}o_img_#{$value}.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+.biz-list {
+  width: 100%;
+  li {
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+  }
+}
+.biz-list li:nth-child(3n) {
+  border-style: none;
+}
+.biz-section {
+  padding: 30px 0;
+  .heading-title {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 30px;
+  }
+  .title-detail {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 20px 0;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+@for $value from 1 through 3 {
+  .biz-section .bs-img-#{$value} {
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    background-image: url("#{$img-path}bs-img-#{$value}.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+.three-col-list {
+  width: 100%;
+  list-style: none;
+  @include clearfix;
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+  .career-col {
+    width: 308px;
+    margin: 20px auto;
+    .career-col-text {
+      margin-top: 10px;
+      line-height: 1.5;
+      font-weight: 200;
+      text-align: justify;
+      color: #666;
+      span {
+        font-weight: 500;
+        color: #333;
+      }
+    }
+  }
+}
+.three-col-list li:nth-child(3n) {
+  margin-right: 0;
+}
+$nameList: left, center, right;
+@each $name in $nameList {
+  .career_col_#{$name} {
+    background-image: url("#{$img-path}career_col_#{$name}.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+.access {
+  padding: 30px 0;
+  .heading-title {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 30px;
+  }
+  iframe {
+    margin: 20px auto;
+  }
+}
+.contact-text {
+  text-align: center;
+  margin: 30px auto 15px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.contact-form {
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 750px;
+  tbody {
+    tr {
+      th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: rgba(141, 128, 187, 0.3);
+        font-weight: normal;
+        text-align: left;
+        vertical-align: top;
+        padding: 1rem;
+        white-space: nowrap;
+      }
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: rgba(159, 159, 159, .1);
+      }
+      .length-m {
+        width: 50%;
+      }
+      .length-l {
+        width: 98%;
+      }
+    }
+    .require {
+      font-size: 0.8rem;
+      color: red;
+      padding-left: 0.5rem;
+    }
+    textarea {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+  }
+}
+form {
+  text-align: center;
+  .wpcf7-submit {
+    padding: 10px;
+  }
+}
+.entry-content {
+  margin-bottom: 30px;
+}
+@media screen and (max-width:1024px) {
+  html {
+    font-size: 12px;
+  }
+  .entry-header {
+    padding: 30px 15px;
+  }
+  .officers-profile .officers-list .o_list_element {
+    height: 200px;
+    @for $var from 1 through 2 {
+      .o_img_#{$var} {
+        background-image: url("#{$img-path}o_img_#{$var}_mobile.png");
+      }
+    }
+  }
+  three-col-list .career-col {
+    width: 100%;
+    .career-col-text {
+      width: 70%;
+      margin: 10px auto;
+    }
+  }
+  .access {
+    text-align: center;
+  }
+
+  .biz-section {
+    @for $var from 1 through 3 {
+      .bs-img-#{$var} {
+        background-image: url("#{$img-path}bs-img-#{$var}-tab.png");
+        height: 300px;
+        width: 100%;
+      }
+    }
+  }
+  .entry-content {
+    width: 95%;
+    margin: 0 auto 30px;
+  }
+}
+@media screen and (max-width:768px) {
+  .articlewrap {
+    width: 95%;
+    margin: 0 auto;
+    .entry-content {
+      margin: 0 auto 30px;
+    }
+  }
+}
+@media screen and (max-width:414px) {
+  .access {
+    .heading-title {
+      text-align: justify;
+    }
+  }
+  .contact-text {
+    font-size: 1rem;
+    margin: auto;
+    padding: 30px 0 0;
+  }
+  .contact-form {
+    .wpcf7-form-control-wrap {
+      max-width: 200px;
+    }
+    .text {
+      max-width: 200px;
+    }
+  }
+  .officers-profile .officers-list .o_list_element {
+    height: auto;
+    .officer-text {
+      width: 100%;
+    }
+    .officers_img {
+      width: 100%;
+      height: 190px;
+      float: none;
+    }
+  }
+  .ct-body tr {
+    th {
+      font-size: 1rem;
+    }
+    td {
+      font-size: 1rem;
+    }
+  }
+  .biz-section {
+    @for $var from 1 through 3 {
+      .bs-img-#{$var} {
+        background-image: url("#{$img-path}bs-img-#{$var}-mobile.png");
+        height: 200px;
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+  }
+  .entry-content {
+    .three-col-list {
+      td {
+        display: block;
+      }
+      .career-col {
+        width: 100%;
+      }
+    }
+  }
+  .text {
+    width: 100%;
+  }
+}

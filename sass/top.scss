@@ -1,0 +1,248 @@
+@charset 'UTF-8';
+@import 'compass';
+$img-path: '../images/';
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+$img-path: '../images/';
+$layoutborder-color: #ccc;
+* {
+  @include box-sizing(border-box);
+}
+.innertopbar {
+  height: 86px;
+  margin: 0 auto;
+  width: 960px;
+}
+.companyname {
+  float: left;
+  height: 86px;
+  width: 160px;
+  line-height: 86px;
+  background-image: url("#{$img-path}onese-logo1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  a {
+    display: block;
+    height: 100%;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+.keyvisual {
+  background-image: url("#{$img-path}keyvisual.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  clear: both;
+  height: 300px;
+  margin-top: 86px;
+  max-width: 2560px;
+  width: 100%;
+}
+.corpinfokv,
+.businesskv,
+.careerkv,
+.accesskv,
+.contactkv {
+  @extend .keyvisual;
+}
+.corpinfokv {
+  background-image: url("#{$img-path}corpinfokv.png");
+}
+.businesskv {
+  background-image: url("#{$img-path}businesskv.png");
+}
+.careerkv {
+  background-image: url("#{$img-path}careerkv.png");
+}
+.accesskv {
+  background-image: url("#{$img-path}accesskv.png");
+}
+.contactkv {
+  background-image: url("#{$img-path}contactkv.png");
+}
+.brankkv {
+  height: 0;
+  margin-top: 86px;
+  width: 0;
+}
+.innerkvtable {
+  display: table;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 300px;
+  .innerkv {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+.main-content-area {
+  width: 960px;
+  margin: 0 auto;
+  h1, h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 30px;
+  }
+  .topic-title {
+    margin-bottom: 20px;
+    font-weight: 200;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+}
+.three-col-list {
+  width: 100%;
+  list-style: none;
+  @include clearfix;
+  .bx-img {
+    float: left;
+    width: 308px;
+    margin: 30px 18px 40px 0;
+    .bx-img-text {
+      margin-top: 10px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #666;
+      font-size: 1rem;
+    }
+  }
+}
+.three-col-list li:nth-child(3n) {
+  margin-right: 0;
+}
+.three_col_img {
+  width: 100%;
+  height: 176px;
+}
+.three_col_left {
+  background-image: url("#{$img-path}three_col_left.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.three_col_center {
+  @extend .three_col_left;
+  background-image: url("#{$img-path}three_col_center.png");
+}
+.three_col_right {
+  @extend .three_col_left;
+  background-image: url("#{$img-path}three_col_right.png");
+}
+.headerspan {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #333;
+}
+.businesstag {
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  background-color: rgba(184, 73, 255, .9);
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.5rem;
+    font-weight: 200;
+    display: block;
+    line-height: 100%;
+    padding: 0.3rem 0.5rem;
+  }
+}
+.corpinfotag {
+  @extend .businesstag;
+  background-color: rgba(10, 140, 247, .9);
+}
+.contacttag {
+  @extend .businesstag;
+  background: rgba(0, 156, 34, .9);
+}
+@media screen and (max-width:1024px) {
+  .main-content-area {
+    width: 95%;
+    td {
+      padding: 20px 0;
+      h3 {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        vertical-align: top;
+      }
+      .bx-img {
+        width: 100%;
+        .bx-img-text {
+          width: 80%;
+          margin: 0.5rem auto;
+        }
+      }
+    }
+  }
+  .add-margin {
+    margin-top: 50px;
+  }
+  $kvList: keyvisual, corpinfokv, businesskv, careerkv, accesskv, contactkv;
+  @each $kvname in $kvList {
+    .#{$kvname} {
+      background-image: url("#{$img-path}#{$kvname}-tab.png");
+    }
+  }
+  .innerkvtable {
+    width: 95%;
+    .innerkv {
+      width: 100%;
+      h1 {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}
+@media screen and (max-width:414px) {
+  .main-content-area td {
+    display: block;
+    .bx-img .bx-img-text {
+      width: 95%;
+    }
+  }
+  .add-margin {
+    margin-top: 30px;
+  }
+  .entry-content .three-col-list {
+    width: 100%;
+  }
+  $kvList: keyvisual, corpinfokv, businesskv, careerkv, accesskv, contactkv;
+  @each $kvname in $kvList {
+    .#{$kvname} {
+      background-image: url("#{$img-path}#{$kvname}-mobile.png");
+      height: 200px;
+    }
+  }
+
+  .innerkvtable {
+    height: 200px;
+  }
+}
