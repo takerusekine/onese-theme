@@ -242,21 +242,43 @@ body * {
 /* line 130, ../sass/base.scss */
 .biz-section .heading-title {
   font-size: 2rem;
-  font-weight: 100;
   margin-top: 30px;
+  padding-left: 3rem;
+  position: relative;
+  font-weight: 400;
 }
-/* line 135, ../sass/base.scss */
+/* line 136, ../sass/base.scss */
+.biz-section .heading-title::after {
+  border: 5px solid #9184C1;
+  width: 20px;
+  height: 20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+/* line 145, ../sass/base.scss */
+.biz-section .heading-title::before {
+  content: "";
+  position: absolute;
+  border: 5px solid #9E9E9F;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 10px;
+}
+/* line 155, ../sass/base.scss */
 .biz-section .title-detail {
   font-size: 1.5rem;
   font-weight: 100;
   margin: 20px 0;
 }
-/* line 140, ../sass/base.scss */
+/* line 160, ../sass/base.scss */
 .biz-section p {
   line-height: 1.5;
 }
 
-/* line 145, ../sass/base.scss */
+/* line 165, ../sass/base.scss */
 .biz-section .bs-img-1 {
   margin-top: 30px;
   height: 300px;
@@ -267,7 +289,7 @@ body * {
   background-size: auto;
 }
 
-/* line 145, ../sass/base.scss */
+/* line 165, ../sass/base.scss */
 .biz-section .bs-img-2 {
   margin-top: 30px;
   height: 300px;
@@ -278,7 +300,7 @@ body * {
   background-size: auto;
 }
 
-/* line 145, ../sass/base.scss */
+/* line 165, ../sass/base.scss */
 .biz-section .bs-img-3 {
   margin-top: 30px;
   height: 300px;
@@ -289,28 +311,28 @@ body * {
   background-size: auto;
 }
 
-/* line 155, ../sass/base.scss */
+/* line 175, ../sass/base.scss */
 .three-col-list {
   width: 100%;
   list-style: none;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 159, ../sass/base.scss */
+/* line 179, ../sass/base.scss */
 .three-col-list h3 {
   font-size: 2rem;
   text-align: center;
 }
-/* line 163, ../sass/base.scss */
+/* line 183, ../sass/base.scss */
 .three-col-list td {
   text-align: center;
 }
-/* line 166, ../sass/base.scss */
+/* line 186, ../sass/base.scss */
 .three-col-list .career-col {
   width: 308px;
   margin: 20px auto;
 }
-/* line 169, ../sass/base.scss */
+/* line 189, ../sass/base.scss */
 .three-col-list .career-col .career-col-text {
   margin-top: 10px;
   line-height: 1.5;
@@ -318,18 +340,18 @@ body * {
   text-align: justify;
   color: #666;
 }
-/* line 175, ../sass/base.scss */
+/* line 195, ../sass/base.scss */
 .three-col-list .career-col .career-col-text span {
   font-weight: 500;
   color: #333;
 }
 
-/* line 182, ../sass/base.scss */
+/* line 202, ../sass/base.scss */
 .three-col-list li:nth-child(3n) {
   margin-right: 0;
 }
 
-/* line 187, ../sass/base.scss */
+/* line 207, ../sass/base.scss */
 .career_col_left {
   background-image: url("../images/career_col_left.png");
   background-position: 50% 50%;
@@ -337,7 +359,7 @@ body * {
   background-size: auto;
 }
 
-/* line 187, ../sass/base.scss */
+/* line 207, ../sass/base.scss */
 .career_col_center {
   background-image: url("../images/career_col_center.png");
   background-position: 50% 50%;
@@ -345,7 +367,7 @@ body * {
   background-size: auto;
 }
 
-/* line 187, ../sass/base.scss */
+/* line 207, ../sass/base.scss */
 .career_col_right {
   background-image: url("../images/career_col_right.png");
   background-position: 50% 50%;
@@ -353,22 +375,22 @@ body * {
   background-size: auto;
 }
 
-/* line 194, ../sass/base.scss */
+/* line 214, ../sass/base.scss */
 .access {
   padding: 30px 0;
 }
-/* line 196, ../sass/base.scss */
+/* line 216, ../sass/base.scss */
 .access .heading-title {
   font-size: 2rem;
   font-weight: 100;
   margin-top: 30px;
 }
-/* line 201, ../sass/base.scss */
+/* line 221, ../sass/base.scss */
 .access iframe {
   margin: 20px auto;
 }
 
-/* line 205, ../sass/base.scss */
+/* line 225, ../sass/base.scss */
 .contact-text {
   text-align: center;
   margin: 30px auto 15px;
@@ -376,7 +398,7 @@ body * {
   font-weight: 200;
 }
 
-/* line 211, ../sass/base.scss */
+/* line 231, ../sass/base.scss */
 .contact-form {
   margin: 30px auto;
   border: 1px solid #ccc;
@@ -384,7 +406,7 @@ body * {
   width: 100%;
   max-width: 750px;
 }
-/* line 219, ../sass/base.scss */
+/* line 239, ../sass/base.scss */
 .contact-form tbody tr th {
   border: 1px solid #ccc;
   padding: 10px;
@@ -395,182 +417,182 @@ body * {
   padding: 1rem;
   white-space: nowrap;
 }
-/* line 229, ../sass/base.scss */
+/* line 249, ../sass/base.scss */
 .contact-form tbody tr td {
   border: 1px solid #ccc;
   padding: 10px;
   background-color: rgba(159, 159, 159, 0.1);
 }
-/* line 234, ../sass/base.scss */
+/* line 254, ../sass/base.scss */
 .contact-form tbody tr .length-m {
   width: 50%;
 }
-/* line 237, ../sass/base.scss */
+/* line 257, ../sass/base.scss */
 .contact-form tbody tr .length-l {
   width: 98%;
 }
-/* line 241, ../sass/base.scss */
+/* line 261, ../sass/base.scss */
 .contact-form tbody .require {
   font-size: 0.8rem;
   color: red;
   padding-left: 0.5rem;
 }
-/* line 246, ../sass/base.scss */
+/* line 266, ../sass/base.scss */
 .contact-form tbody textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
 
-/* line 252, ../sass/base.scss */
+/* line 272, ../sass/base.scss */
 form {
   text-align: center;
 }
-/* line 254, ../sass/base.scss */
+/* line 274, ../sass/base.scss */
 form .wpcf7-submit {
   padding: 10px;
 }
 
-/* line 258, ../sass/base.scss */
+/* line 278, ../sass/base.scss */
 .entry-content {
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 262, ../sass/base.scss */
+  /* line 282, ../sass/base.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 265, ../sass/base.scss */
+  /* line 285, ../sass/base.scss */
   .entry-header {
     padding: 30px 15px;
   }
 
-  /* line 268, ../sass/base.scss */
+  /* line 288, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element {
     height: 200px;
   }
-  /* line 271, ../sass/base.scss */
+  /* line 291, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element .o_img_1 {
     background-image: url("../images/o_img_1_mobile.png");
   }
-  /* line 271, ../sass/base.scss */
+  /* line 291, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element .o_img_2 {
     background-image: url("../images/o_img_2_mobile.png");
   }
 
-  /* line 276, ../sass/base.scss */
+  /* line 296, ../sass/base.scss */
   three-col-list .career-col {
     width: 100%;
   }
-  /* line 278, ../sass/base.scss */
+  /* line 298, ../sass/base.scss */
   three-col-list .career-col .career-col-text {
     width: 70%;
     margin: 10px auto;
   }
 
-  /* line 283, ../sass/base.scss */
+  /* line 303, ../sass/base.scss */
   .access {
     text-align: center;
   }
 
-  /* line 289, ../sass/base.scss */
+  /* line 309, ../sass/base.scss */
   .biz-section .bs-img-1 {
     background-image: url("../images/bs-img-1-tab.png");
     height: 300px;
     width: 100%;
   }
-  /* line 289, ../sass/base.scss */
+  /* line 309, ../sass/base.scss */
   .biz-section .bs-img-2 {
     background-image: url("../images/bs-img-2-tab.png");
     height: 300px;
     width: 100%;
   }
-  /* line 289, ../sass/base.scss */
+  /* line 309, ../sass/base.scss */
   .biz-section .bs-img-3 {
     background-image: url("../images/bs-img-3-tab.png");
     height: 300px;
     width: 100%;
   }
 
-  /* line 296, ../sass/base.scss */
+  /* line 316, ../sass/base.scss */
   .entry-content {
     width: 95%;
     margin: 0 auto 30px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 302, ../sass/base.scss */
+  /* line 322, ../sass/base.scss */
   .articlewrap {
     width: 95%;
     margin: 0 auto;
   }
-  /* line 305, ../sass/base.scss */
+  /* line 325, ../sass/base.scss */
   .articlewrap .entry-content {
     margin: 0 auto 30px;
   }
 }
 @media screen and (max-width: 414px) {
-  /* line 312, ../sass/base.scss */
+  /* line 332, ../sass/base.scss */
   .access .heading-title {
     text-align: justify;
   }
 
-  /* line 316, ../sass/base.scss */
+  /* line 336, ../sass/base.scss */
   .contact-text {
     font-size: 1rem;
     margin: auto;
     padding: 30px 0 0;
   }
 
-  /* line 322, ../sass/base.scss */
+  /* line 342, ../sass/base.scss */
   .contact-form .wpcf7-form-control-wrap {
     max-width: 200px;
   }
-  /* line 325, ../sass/base.scss */
+  /* line 345, ../sass/base.scss */
   .contact-form .text {
     max-width: 200px;
   }
 
-  /* line 329, ../sass/base.scss */
+  /* line 349, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element {
     height: auto;
   }
-  /* line 331, ../sass/base.scss */
+  /* line 351, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element .officer-text {
     width: 100%;
   }
-  /* line 334, ../sass/base.scss */
+  /* line 354, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element .officers_img {
     width: 100%;
     height: 190px;
     float: none;
   }
 
-  /* line 341, ../sass/base.scss */
+  /* line 361, ../sass/base.scss */
   .ct-body tr th {
     font-size: 1rem;
   }
-  /* line 344, ../sass/base.scss */
+  /* line 364, ../sass/base.scss */
   .ct-body tr td {
     font-size: 1rem;
   }
 
-  /* line 350, ../sass/base.scss */
+  /* line 370, ../sass/base.scss */
   .biz-section .bs-img-1 {
     background-image: url("../images/bs-img-1-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%;
   }
-  /* line 350, ../sass/base.scss */
+  /* line 370, ../sass/base.scss */
   .biz-section .bs-img-2 {
     background-image: url("../images/bs-img-2-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%;
   }
-  /* line 350, ../sass/base.scss */
+  /* line 370, ../sass/base.scss */
   .biz-section .bs-img-3 {
     background-image: url("../images/bs-img-3-mobile.png");
     height: 200px;
@@ -578,16 +600,16 @@ form .wpcf7-submit {
     width: 100%;
   }
 
-  /* line 360, ../sass/base.scss */
+  /* line 380, ../sass/base.scss */
   .entry-content .three-col-list td {
     display: block;
   }
-  /* line 363, ../sass/base.scss */
+  /* line 383, ../sass/base.scss */
   .entry-content .three-col-list .career-col {
     width: 100%;
   }
 
-  /* line 368, ../sass/base.scss */
+  /* line 388, ../sass/base.scss */
   .text {
     width: 100%;
   }
