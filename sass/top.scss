@@ -30,13 +30,12 @@ $layoutborder-color: #ccc;
   height: 86px;
   width: 160px;
   line-height: 86px;
-  background-image: url("#{$img-path}onese-logo1.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 100% auto;
   a {
     display: block;
     height: 100%;
+    img {
+      padding: 10px 0;
+    }
     &:hover {
       background-color: rgba(255, 255, 255, 0.5);
     }

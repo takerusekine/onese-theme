@@ -35,9 +35,11 @@
   <div class="topbar">
     <div class="innertopbar">
 
-      <span class="companyname">
-        <a href="<?php echo home_url('/');?>"></a>
-      </span>
+      <div class="companyname">
+        <a href="<?php echo home_url('/');?>">
+          <img src="<?php bloginfo('template_url');?>/images/onese-logo1.png" alt="会社ロゴ" />
+        </a>
+      </div>
       <div class="globalNavi">
         <?php wp_nav_menu(
                 array(
