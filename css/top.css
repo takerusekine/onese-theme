@@ -239,27 +239,27 @@
   .careerkv,
   .accesskv,
   .contactkv {
-    background-image: url("../images/keyvisual-tab.png"); }
+    background-image: url("../images/keyvisual-bg-tab.jpg"); }
 
   /* line 235, ../sass/top.scss */
   .corpinfokv {
-    background-image: url("../images/corpinfokv-tab.png"); }
+    background-image: url("../images/corpinfokv-bg-tab.jpg"); }
 
   /* line 235, ../sass/top.scss */
   .businesskv {
-    background-image: url("../images/businesskv-tab.png"); }
+    background-image: url("../images/businesskv-bg-tab.jpg"); }
 
   /* line 235, ../sass/top.scss */
   .careerkv {
-    background-image: url("../images/careerkv-tab.png"); }
+    background-image: url("../images/careerkv-bg-tab.jpg"); }
 
   /* line 235, ../sass/top.scss */
   .accesskv {
-    background-image: url("../images/accesskv-tab.png"); }
+    background-image: url("../images/accesskv-bg-tab.jpg"); }
 
   /* line 235, ../sass/top.scss */
   .contactkv {
-    background-image: url("../images/contactkv-tab.png"); }
+    background-image: url("../images/contactkv-bg-tab.jpg"); }
 
   /* line 239, ../sass/top.scss */
   .innerkvtable {
@@ -287,40 +287,55 @@
   .entry-content .three-col-list {
     width: 100%; }
 
-  /* line 265, ../sass/top.scss */
+  /* line 263, ../sass/top.scss */
+  .three-col-list .bx-img {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+
+  /* line 268, ../sass/top.scss */
+  .three-col-list li:nth-child(3n) {
+    margin: 0 auto;
+    margin-bottom: 50px; }
+
+  /* line 275, ../sass/top.scss */
   .keyvisual, .corpinfokv,
   .businesskv,
   .careerkv,
   .accesskv,
   .contactkv {
-    background-image: url("../images/keyvisual-mobile.png");
+    background-image: url("../images/keyvisual-bg-mobile.jpg");
     height: 200px; }
 
-  /* line 265, ../sass/top.scss */
+  /* line 275, ../sass/top.scss */
   .corpinfokv {
-    background-image: url("../images/corpinfokv-mobile.png");
+    background-image: url("../images/corpinfokv-bg-mobile.jpg");
     height: 200px; }
 
-  /* line 265, ../sass/top.scss */
+  /* line 275, ../sass/top.scss */
   .businesskv {
-    background-image: url("../images/businesskv-mobile.png");
+    background-image: url("../images/businesskv-bg-mobile.jpg");
     height: 200px; }
 
-  /* line 265, ../sass/top.scss */
+  /* line 275, ../sass/top.scss */
   .careerkv {
-    background-image: url("../images/careerkv-mobile.png");
+    background-image: url("../images/careerkv-bg-mobile.jpg");
     height: 200px; }
 
-  /* line 265, ../sass/top.scss */
+  /* line 275, ../sass/top.scss */
   .accesskv {
-    background-image: url("../images/accesskv-mobile.png");
+    background-image: url("../images/accesskv-bg-mobile.jpg");
     height: 200px; }
 
-  /* line 265, ../sass/top.scss */
+  /* line 275, ../sass/top.scss */
   .contactkv {
-    background-image: url("../images/contactkv-mobile.png");
+    background-image: url("../images/contactkv-bg-mobile.jpg");
     height: 200px; }
 
-  /* line 270, ../sass/top.scss */
+  /* line 280, ../sass/top.scss */
+  .kv-text-cell {
+    text-align: center; }
+
+  /* line 284, ../sass/top.scss */
   .innerkvtable {
     height: 200px; } }

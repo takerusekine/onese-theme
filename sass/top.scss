@@ -75,7 +75,7 @@ $layoutborder-color: #ccc;
     }
     .onesepurple {
       color: $onesepurple;
-      text-shadow: 1px 1px #fff,1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 
+      text-shadow: 1px 1px #fff,1px -1px #fff, -1px 1px #fff, -1px -1px #fff,
     }
   }
 }
@@ -233,7 +233,7 @@ $layoutborder-color: #ccc;
   $kvList: keyvisual, corpinfokv, businesskv, careerkv, accesskv, contactkv;
   @each $kvname in $kvList {
     .#{$kvname} {
-      background-image: url("#{$img-path}#{$kvname}-tab.png");
+      background-image: url("#{$img-path}#{$kvname}-bg-tab.jpg");
     }
   }
   .innerkvtable {
@@ -260,13 +260,27 @@ $layoutborder-color: #ccc;
   .entry-content .three-col-list {
     width: 100%;
   }
+  .three-col-list .bx-img {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .three-col-list li:nth-child(3n) {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
   $kvList: keyvisual, corpinfokv, businesskv, careerkv, accesskv, contactkv;
   @each $kvname in $kvList {
     .#{$kvname} {
-      background-image: url("#{$img-path}#{$kvname}-mobile.png");
+      background-image: url("#{$img-path}#{$kvname}-bg-mobile.jpg");
       height: 200px;
     }
   }
+  .kv-text-cell {
+    text-align: center;
+  }
+
   .innerkvtable {
     height: 200px;
   }
