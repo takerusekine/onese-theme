@@ -54,6 +54,14 @@
 
   <?php if (is_front_page()): ?>
     <div class="keyvisual">
+      <div class="kv-text">
+        <div class="kv-text-cell">
+          <h1>ひとつのセンスで全てを幸せに…</h1>
+          <p>
+            one + sense = <span class="onesegray">one</span><span class="onesepurple">se</span>
+          </p>
+        </div>
+      </div>
     </div>
     <?php elseif(is_page('corpinfo')): ?>
       <div class="corpinfokv">

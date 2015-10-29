@@ -1,6 +1,9 @@
 @charset 'UTF-8';
 @import 'compass';
 $img-path: '../images/';
+$onesegray: #9E9E9F;
+$onesepurple: #8D80BB ;
+
 @mixin clearfix {
   &:after {
     content: ".";
@@ -42,8 +45,8 @@ $layoutborder-color: #ccc;
   }
 }
 .keyvisual {
-  background-image: url("#{$img-path}keyvisual.png");
-  background-position: 50% 50%;
+  background-image: url("#{$img-path}keyvisual-bg.jpg");
+  background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: auto 100%;
   clear: both;
@@ -51,6 +54,30 @@ $layoutborder-color: #ccc;
   margin-top: 86px;
   max-width: 2560px;
   width: 100%;
+}
+.kv-text {
+  height: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: table;
+}
+.kv-text-cell {
+  display: table-cell;
+  vertical-align: middle;
+  p {
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2rem;
+    .onesegray {
+      color: $onesegray;
+      text-shadow: 1px 1px #fff,1px -1px #fff, -1px 1px #fff, -1px -1px #fff,
+    }
+    .onesepurple {
+      color: $onesepurple;
+      text-shadow: 1px 1px #fff,1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 
+    }
+  }
 }
 .corpinfokv,
 .businesskv,
@@ -97,7 +124,8 @@ $layoutborder-color: #ccc;
 .main-content-area {
   width: 960px;
   margin: 0 auto;
-  h1, h3 {
+  h1,
+  h3 {
     font-size: 2rem;
     font-weight: 100;
     margin-top: 30px;
@@ -218,7 +246,6 @@ $layoutborder-color: #ccc;
       }
     }
   }
-
 }
 @media screen and (max-width:414px) {
   .main-content-area td {
@@ -240,7 +267,6 @@ $layoutborder-color: #ccc;
       height: 200px;
     }
   }
-
   .innerkvtable {
     height: 200px;
   }

@@ -4,6 +4,8 @@
 $rootfontsize: 16px;
 $colorvar-black: #111;
 $img-path: '../images/';
+$onesegray: #9E9E9F;
+$onesepurple: #8D80BB ;
 @mixin box-sizing($type) {
   -webkit-box-sizing: $type;
   -moz-box-sizing: $type;
@@ -22,9 +24,13 @@ body {
   margin: 0 auto;
   max-width: 2560px;
   width: 100%;
-  * {
-    font-weight: 200;
-  }
+  font-weight: 300;
+
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
 }
 .articlewrap {
   margin: 0 auto;

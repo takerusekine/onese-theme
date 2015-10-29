@@ -2,6 +2,8 @@
 @import 'compass';
 
 $footercolor: #2f2d34;
+$onesegray: #9E9E9F;
+$onesepurple: #8D80BB;
 
 @mixin box-sizing($type) {
   -webkit-box-sizing: $type;

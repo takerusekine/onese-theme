@@ -1,6 +1,8 @@
 @charset 'UTF-8';
 @import 'compass';
 $img-path: '../images/';
+$onesegray: #9E9E9F;
+$onesepurple: #8D80BB;
 @mixin clearfix {
   &:after {
     content: ".";
