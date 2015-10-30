@@ -49,7 +49,7 @@
     /* line 64, ../sass/nav.scss */
     .globalNavi ul li ul {
       position: absolute;
-      top: 105%;
+      top: 100%;
       left: 0;
       width: 100%;
       height: 86px;
@@ -78,7 +78,7 @@
   color: #9e9e9f; }
   /* line 94, ../sass/nav.scss */
   .globalNavi ul li .sub-menu li a:hover {
-    color: #fff; }
+    color: #8e81bc; }
 
 /* line 98, ../sass/nav.scss */
 .slicknav_menu {
