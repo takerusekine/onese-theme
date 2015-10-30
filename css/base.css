@@ -206,38 +206,39 @@ h1 {
 /* line 134, ../sass/base.scss */
 .biz-section {
   padding: 30px 0; }
-  /* line 136, ../sass/base.scss */
-  .biz-section .heading-title {
-    font-size: 2rem;
-    margin-top: 30px;
-    padding-left: 3rem;
-    position: relative;
-    font-weight: 400; }
-    /* line 142, ../sass/base.scss */
-    .biz-section .heading-title::after {
-      border: 5px solid #9184C1;
-      width: 20px;
-      height: 20px;
-      content: "";
-      position: absolute;
-      left: 0;
-      top: -5px; }
-    /* line 151, ../sass/base.scss */
-    .biz-section .heading-title::before {
-      content: "";
-      position: absolute;
-      border: 5px solid #9E9E9F;
-      width: 20px;
-      height: 20px;
-      top: 5px;
-      left: 10px; }
+
+/* line 137, ../sass/base.scss */
+.heading-title {
+  font-size: 2rem;
+  margin-top: 30px;
+  padding-left: 3rem;
+  position: relative;
+  font-weight: 400; }
+  /* line 143, ../sass/base.scss */
+  .heading-title::after {
+    border: 5px solid #9184C1;
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px; }
+  /* line 152, ../sass/base.scss */
+  .heading-title::before {
+    content: "";
+    position: absolute;
+    border: 5px solid #9E9E9F;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 10px; }
   /* line 161, ../sass/base.scss */
-  .biz-section .title-detail {
+  .heading-title .title-detail {
     font-size: 1.5rem;
     font-weight: 100;
     margin: 20px 0; }
   /* line 166, ../sass/base.scss */
-  .biz-section p {
+  .heading-title p {
     line-height: 1.5; }
 
 /* line 171, ../sass/base.scss */
