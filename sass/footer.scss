@@ -55,7 +55,9 @@ $onesepurple: #8D80BB;
           color: #9E9E9F;
           text-decoration: none;
           text-align: center;
-          font-weight: 200;
+          &:hover {
+            color: #fff;
+          }
       }
       .children {
         width: 100%;
@@ -71,12 +73,12 @@ $onesepurple: #8D80BB;
             font-size: 0.8rem;
             color: #9E9E9F;
             margin-top: 20px;
+            &:hover {
+              color: #fff;
+            }
           }
         }
-        .current_page_item > a {
-          color: #111;
-          font-weight: 400;
-        }
+        
       }
     }
   }
@@ -89,6 +91,7 @@ $onesepurple: #8D80BB;
     display: block;
     float: right;
     margin-right: 3%;
+
   }
   .copyright {
     display: block;
@@ -102,7 +105,6 @@ $onesepurple: #8D80BB;
 
 .widget-container ul .current_page_item > a {
     color: #8e81bc;
-    font-weight: 600;
   }
 
 
