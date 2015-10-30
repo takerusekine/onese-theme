@@ -214,7 +214,7 @@ p {
 .heading-title {
   font-size: 2rem;
   margin-top: 30px;
-  padding-left: 3rem;
+  padding-left: 5rem;
   position: relative;
   font-weight: 400;
   margin-bottom: 30px; }
@@ -335,27 +335,26 @@ p {
   /* line 227, ../sass/base.scss */
   .access .heading-title {
     font-size: 2rem;
-    font-weight: 100;
     margin-top: 30px; }
-  /* line 232, ../sass/base.scss */
+  /* line 231, ../sass/base.scss */
   .access iframe {
     margin: 20px auto; }
 
-/* line 236, ../sass/base.scss */
+/* line 235, ../sass/base.scss */
 .contact-text {
   text-align: center;
   margin: 30px auto 15px;
   font-size: 2rem;
   font-weight: 200; }
 
-/* line 242, ../sass/base.scss */
+/* line 241, ../sass/base.scss */
 .contact-form {
   margin: 30px auto;
   border: 1px solid #ccc;
   border-collapse: collapse;
   width: 100%;
   max-width: 750px; }
-  /* line 250, ../sass/base.scss */
+  /* line 249, ../sass/base.scss */
   .contact-form tbody tr th {
     border: 1px solid #ccc;
     padding: 10px;
@@ -365,160 +364,160 @@ p {
     vertical-align: top;
     padding: 1rem;
     white-space: nowrap; }
-  /* line 260, ../sass/base.scss */
+  /* line 259, ../sass/base.scss */
   .contact-form tbody tr td {
     border: 1px solid #ccc;
     padding: 10px;
     background-color: rgba(159, 159, 159, 0.1); }
-  /* line 265, ../sass/base.scss */
+  /* line 264, ../sass/base.scss */
   .contact-form tbody tr .length-m {
     width: 50%; }
-  /* line 268, ../sass/base.scss */
+  /* line 267, ../sass/base.scss */
   .contact-form tbody tr .length-l {
     width: 98%; }
-  /* line 272, ../sass/base.scss */
+  /* line 271, ../sass/base.scss */
   .contact-form tbody .require {
     font-size: 0.8rem;
     color: red;
     padding-left: 0.5rem; }
-  /* line 277, ../sass/base.scss */
+  /* line 276, ../sass/base.scss */
   .contact-form tbody textarea {
     border: 1px solid #ccc;
     border-radius: 3px; }
 
-/* line 283, ../sass/base.scss */
+/* line 282, ../sass/base.scss */
 form {
   text-align: center; }
-  /* line 285, ../sass/base.scss */
+  /* line 284, ../sass/base.scss */
   form .wpcf7-submit {
     padding: 10px; }
 
-/* line 289, ../sass/base.scss */
+/* line 288, ../sass/base.scss */
 .entry-content {
   margin-bottom: 30px; }
 
 @media screen and (max-width: 1024px) {
-  /* line 293, ../sass/base.scss */
+  /* line 292, ../sass/base.scss */
   html {
     font-size: 12px; }
 
-  /* line 296, ../sass/base.scss */
+  /* line 295, ../sass/base.scss */
   .entry-header {
     padding: 30px 15px; }
 
-  /* line 299, ../sass/base.scss */
+  /* line 298, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element {
     height: 200px; }
-    /* line 302, ../sass/base.scss */
+    /* line 301, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .o_img_1 {
       background-image: url("../images/o_img_1_mobile.png"); }
-    /* line 302, ../sass/base.scss */
+    /* line 301, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .o_img_2 {
       background-image: url("../images/o_img_2_mobile.png"); }
 
-  /* line 307, ../sass/base.scss */
+  /* line 306, ../sass/base.scss */
   three-col-list .career-col {
     width: 100%; }
-    /* line 309, ../sass/base.scss */
+    /* line 308, ../sass/base.scss */
     three-col-list .career-col .career-col-text {
       width: 70%;
       margin: 10px auto; }
 
-  /* line 314, ../sass/base.scss */
+  /* line 313, ../sass/base.scss */
   .access {
     text-align: center; }
 
-  /* line 320, ../sass/base.scss */
+  /* line 319, ../sass/base.scss */
   .biz-section .bs-img-1 {
     background-image: url("../images/bs-img-1-tab.png");
     height: 300px;
     width: 100%; }
-  /* line 320, ../sass/base.scss */
+  /* line 319, ../sass/base.scss */
   .biz-section .bs-img-2 {
     background-image: url("../images/bs-img-2-tab.png");
     height: 300px;
     width: 100%; }
-  /* line 320, ../sass/base.scss */
+  /* line 319, ../sass/base.scss */
   .biz-section .bs-img-3 {
     background-image: url("../images/bs-img-3-tab.png");
     height: 300px;
     width: 100%; }
 
-  /* line 327, ../sass/base.scss */
+  /* line 326, ../sass/base.scss */
   .entry-content {
     width: 95%;
     margin: 0 auto 30px; } }
 @media screen and (max-width: 768px) {
-  /* line 333, ../sass/base.scss */
+  /* line 332, ../sass/base.scss */
   .articlewrap {
     width: 95%;
     margin: 0 auto; }
-    /* line 336, ../sass/base.scss */
+    /* line 335, ../sass/base.scss */
     .articlewrap .entry-content {
       margin: 0 auto 30px; } }
 @media screen and (max-width: 414px) {
-  /* line 343, ../sass/base.scss */
+  /* line 342, ../sass/base.scss */
   .access .heading-title {
     text-align: justify; }
 
-  /* line 347, ../sass/base.scss */
+  /* line 346, ../sass/base.scss */
   .contact-text {
     font-size: 1rem;
     margin: auto;
     padding: 30px 0 0; }
 
-  /* line 353, ../sass/base.scss */
+  /* line 352, ../sass/base.scss */
   .contact-form .wpcf7-form-control-wrap {
     max-width: 200px; }
-  /* line 356, ../sass/base.scss */
+  /* line 355, ../sass/base.scss */
   .contact-form .text {
     max-width: 200px; }
 
-  /* line 360, ../sass/base.scss */
+  /* line 359, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element {
     height: auto; }
-    /* line 362, ../sass/base.scss */
+    /* line 361, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .officer-text {
       width: 100%; }
-    /* line 365, ../sass/base.scss */
+    /* line 364, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .officers_img {
       width: 100%;
       height: 190px;
       float: none; }
 
-  /* line 372, ../sass/base.scss */
+  /* line 371, ../sass/base.scss */
   .ct-body tr th {
     font-size: 1rem; }
-  /* line 375, ../sass/base.scss */
+  /* line 374, ../sass/base.scss */
   .ct-body tr td {
     font-size: 1rem; }
 
-  /* line 381, ../sass/base.scss */
+  /* line 380, ../sass/base.scss */
   .biz-section .bs-img-1 {
     background-image: url("../images/bs-img-1-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%; }
-  /* line 381, ../sass/base.scss */
+  /* line 380, ../sass/base.scss */
   .biz-section .bs-img-2 {
     background-image: url("../images/bs-img-2-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%; }
-  /* line 381, ../sass/base.scss */
+  /* line 380, ../sass/base.scss */
   .biz-section .bs-img-3 {
     background-image: url("../images/bs-img-3-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%; }
 
-  /* line 391, ../sass/base.scss */
+  /* line 390, ../sass/base.scss */
   .entry-content .three-col-list td {
     display: block; }
-  /* line 394, ../sass/base.scss */
+  /* line 393, ../sass/base.scss */
   .entry-content .three-col-list .career-col {
     width: 100%; }
 
-  /* line 399, ../sass/base.scss */
+  /* line 398, ../sass/base.scss */
   .text {
     width: 100%; } }

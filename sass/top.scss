@@ -90,13 +90,13 @@ $layoutborder-color: #ccc;
   background-image: url("#{$img-path}corpinfokv-bg.jpg");
 }
 .businesskv {
-  background-image: url("#{$img-path}businesskv.png");
+  background-image: url("#{$img-path}businesskv-bg.jpg");
 }
 .careerkv {
-  background-image: url("#{$img-path}careerkv.png");
+  background-image: url("#{$img-path}careerkv-bg.jpg");
 }
 .accesskv {
-  background-image: url("#{$img-path}accesskv.png");
+  background-image: url("#{$img-path}accesskv-bg.jpg");
 }
 .contactkv {
   background-image: url("#{$img-path}contactkv-bg.jpg");
@@ -146,6 +146,9 @@ $layoutborder-color: #ccc;
     float: left;
     width: 308px;
     margin: 0 18px 40px 0;
+    a {
+      text-decoration: none;
+    }
     .bx-img-text {
       margin-top: 10px;
       line-height: 1.5;
@@ -163,14 +166,14 @@ $layoutborder-color: #ccc;
   height: 176px;
 }
 .three_col_left {
-  background-image: url("#{$img-path}three_col_left.png");
+  background-image: url("#{$img-path}three-col-left.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto;
 }
 .three_col_center {
   @extend .three_col_left;
-  background-image: url("#{$img-path}three_col_center.png");
+  background-image: url("#{$img-path}three-col-center.jpg");
 }
 .three_col_right {
   @extend .three_col_left;
@@ -188,7 +191,7 @@ $layoutborder-color: #ccc;
   border-right: 2px solid #ddd;
   border-bottom: 2px solid #ddd;
   background-color: rgba(184, 73, 255, .9);
-  a {
+  vertical-align: top;
     color: #fff;
     text-decoration: none;
     font-size: 0.5rem;
@@ -196,7 +199,6 @@ $layoutborder-color: #ccc;
     display: block;
     line-height: 100%;
     padding: 0.3rem 0.5rem;
-  }
 }
 .corpinfotag {
   @extend .businesstag;
@@ -206,6 +208,33 @@ $layoutborder-color: #ccc;
   @extend .businesstag;
   background: rgba(0, 156, 34, .9);
 }
+
+.recruit-table {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  th {
+    padding: 10px;
+    background-color: #d2d2d2;
+    width: 30%;
+    border-bottom: 1px solid #f2f2f2;
+    line-height: 1.5;
+  }
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.5;
+    ul {
+      padding-left: 30px;
+    li {
+      margin-top: 10px;
+      list-style-type: disc;
+    }
+    }
+  }
+}
+
 @media screen and (max-width:1024px) {
   .main-content-area {
     width: 95%;

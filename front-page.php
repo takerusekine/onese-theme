@@ -4,28 +4,34 @@
     <h2 class="heading-title">About Onese</h2>
     <ol class="three-col-list">
       <li class="bx-img">
+        <a href="<?php echo site_url();?>/business/">
         <figure class="three_col_img three_col_left">
-          <span class="businesstag"><a href="<?php echo site_url();?>/business/">事業内容</a></span>
+          <span class="businesstag">事業内容</span>
 
         </figure>
+        </a>
         <p class="bx-img-text">
-          営業プロフェッショナルの集団です。詳しくは、<a href="<?php echo site_url();?>/business/">事業内容</a>をご覧ください。
+          oneseは営業プロフェッショナルの集団です。
         </p>
       </li>
       <li class="bx-img">
+        <a href="<?php echo site_url();?>/corpinfo/">
         <figure class="three_col_img three_col_center">
-          <span class="corpinfotag"><a href="<?php echo site_url();?>/corpinfo/">会社概要</a></span>
+          <span class="corpinfotag">会社概要</span>
         </figure>
+      </a>
         <p  class="bx-img-text">
-          oneseのポリシーは、お客様にご納得いただける成果を上げることです。詳しくは<a href="<?php echo site_url();?>/corpinfo/">こちら</a>をご覧ください。
+          oneseのポリシーは、お客様にご納得いただける成果を上げることです。
         </p>
       </li>
       <li class="bx-img">
+        <a href="<?php echo site_url();?>/contact/">
         <figure class="three_col_img three_col_right">
-          <span class="contacttag"><a href="<?php echo site_url();?>/contact/">お問い合わせ</a></span>
+          <span class="contacttag">お問い合わせ</span>
         </figure>
+        </a>
         <p  class="bx-img-text">
-          お気軽にお問い合わせください。どの内容のお問い合わせも<a href="<?php echo site_url();?>/contact/">こちらから</a>ご連絡いただけます。
+          お気軽にお問い合わせください。
         </p>
       </li>
     </ol>
