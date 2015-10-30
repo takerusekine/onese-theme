@@ -142,7 +142,7 @@
   .three-col-list .bx-img {
     float: left;
     width: 308px;
-    margin: 30px 18px 40px 0; }
+    margin: 0 18px 40px 0; }
     /* line 149, ../sass/top.scss */
     .three-col-list .bx-img .bx-img-text {
       margin-top: 10px;

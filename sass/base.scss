@@ -32,6 +32,11 @@ h1 {
   font-size: 3rem;
   color: #fff;
 }
+
+p {
+  line-height: 1.5;
+}
+
 .articlewrap {
   margin: 0 auto;
   width: 960px;
@@ -124,7 +129,6 @@ h1 {
 .biz-list {
   width: 100%;
   li {
-    border-bottom: 1px solid #ccc;
     list-style: none;
   }
 }
@@ -140,6 +144,7 @@ h1 {
     padding-left: 3rem;
     position: relative;
     font-weight: 400;
+    margin-bottom: 30px;
     &::after {
       border: 5px solid #9184C1;
       width: 20px;

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="section" id="topcontent">
   <div class="main-content-area">
-    <h1>About Onese</h1>
+    <h2 class="heading-title">About Onese</h2>
     <ol class="three-col-list">
       <li class="bx-img">
         <figure class="three_col_img three_col_left">
@@ -34,7 +34,7 @@
 </section>
 <section class="section" id="secondcontent">
   <div class="main-content-area">
-    <h3>採用情報</h3>
+    <h2 class="heading-title">採用情報</h2>
     <ol class="three-col-list">
       <li class="bx-img">
         <span class="headerspan">営業部</span>

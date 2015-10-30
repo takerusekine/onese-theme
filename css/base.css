@@ -78,18 +78,22 @@ h1 {
   font-size: 3rem;
   color: #fff; }
 
-/* line 35, ../sass/base.scss */
+/* line 36, ../sass/base.scss */
+p {
+  line-height: 1.5; }
+
+/* line 40, ../sass/base.scss */
 .articlewrap {
   margin: 0 auto;
   width: 960px; }
 
-/* line 39, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 .entry-title {
   margin: 0;
   font-size: 2rem;
   padding-top: 30px; }
 
-/* line 44, ../sass/base.scss */
+/* line 49, ../sass/base.scss */
 .ct-name {
   border-bottom: 1px solid #111;
   display: block;
@@ -98,123 +102,123 @@ h1 {
   width: 95%;
   margin: 50px auto 0; }
 
-/* line 52, ../sass/base.scss */
+/* line 57, ../sass/base.scss */
 .corp-table {
   width: 95%;
   border-style: none;
   margin: 0 auto 30px; }
 
-/* line 57, ../sass/base.scss */
+/* line 62, ../sass/base.scss */
 .ct-body {
   width: 100%; }
-  /* line 59, ../sass/base.scss */
+  /* line 64, ../sass/base.scss */
   .ct-body tr {
     height: 50px;
     width: 100%; }
-    /* line 62, ../sass/base.scss */
+    /* line 67, ../sass/base.scss */
     .ct-body tr th {
       font-size: 1.2rem;
       line-height: 100%;
       width: 30%;
       padding: 10px; }
-    /* line 68, ../sass/base.scss */
+    /* line 73, ../sass/base.scss */
     .ct-body tr td {
       font-size: 1.2rem;
       line-height: 100%;
       width: 70%;
       padding: 10px; }
 
-/* line 76, ../sass/base.scss */
+/* line 81, ../sass/base.scss */
 .officers-profile {
   margin-top: 30px;
   width: 100%; }
-  /* line 79, ../sass/base.scss */
+  /* line 84, ../sass/base.scss */
   .officers-profile .officers-list {
     width: 100%; }
-    /* line 81, ../sass/base.scss */
+    /* line 86, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element {
       border-bottom: 1px solid #ccc;
       height: 400px;
       width: 100%;
       margin-bottom: 30px; }
 
-/* line 89, ../sass/base.scss */
+/* line 94, ../sass/base.scss */
 .officer-text {
   display: inline-block;
   width: 60%;
   height: 100%; }
-  /* line 93, ../sass/base.scss */
+  /* line 98, ../sass/base.scss */
   .officer-text p {
     margin-top: 10px;
     line-height: 1.5; }
 
-/* line 98, ../sass/base.scss */
+/* line 103, ../sass/base.scss */
 .officers_img {
   float: right;
   height: 100%;
   width: 30%; }
 
-/* line 103, ../sass/base.scss */
+/* line 108, ../sass/base.scss */
 .officers_name {
   display: block;
   font-size: 2rem; }
 
-/* line 107, ../sass/base.scss */
+/* line 112, ../sass/base.scss */
 .officers_subname {
   color: #777;
   display: block;
   font-size: 0.8rem; }
 
-/* line 112, ../sass/base.scss */
+/* line 117, ../sass/base.scss */
 .officers_position {
   display: block;
   font-size: 1rem; }
 
-/* line 117, ../sass/base.scss */
+/* line 122, ../sass/base.scss */
 .o_img_1 {
   background-image: url("../images/o_img_1.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 117, ../sass/base.scss */
+/* line 122, ../sass/base.scss */
 .o_img_2 {
   background-image: url("../images/o_img_2.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 117, ../sass/base.scss */
+/* line 122, ../sass/base.scss */
 .o_img_3 {
   background-image: url("../images/o_img_3.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 124, ../sass/base.scss */
+/* line 129, ../sass/base.scss */
 .biz-list {
   width: 100%; }
-  /* line 126, ../sass/base.scss */
+  /* line 131, ../sass/base.scss */
   .biz-list li {
-    border-bottom: 1px solid #ccc;
     list-style: none; }
 
-/* line 131, ../sass/base.scss */
+/* line 135, ../sass/base.scss */
 .biz-list li:nth-child(3n) {
   border-style: none; }
 
-/* line 134, ../sass/base.scss */
+/* line 138, ../sass/base.scss */
 .biz-section {
   padding: 30px 0; }
 
-/* line 137, ../sass/base.scss */
+/* line 141, ../sass/base.scss */
 .heading-title {
   font-size: 2rem;
   margin-top: 30px;
   padding-left: 3rem;
   position: relative;
-  font-weight: 400; }
-  /* line 143, ../sass/base.scss */
+  font-weight: 400;
+  margin-bottom: 30px; }
+  /* line 148, ../sass/base.scss */
   .heading-title::after {
     border: 5px solid #9184C1;
     width: 20px;
@@ -223,7 +227,7 @@ h1 {
     position: absolute;
     left: 0;
     top: -5px; }
-  /* line 152, ../sass/base.scss */
+  /* line 157, ../sass/base.scss */
   .heading-title::before {
     content: "";
     position: absolute;
@@ -232,16 +236,16 @@ h1 {
     height: 20px;
     top: 5px;
     left: 10px; }
-  /* line 161, ../sass/base.scss */
+  /* line 166, ../sass/base.scss */
   .heading-title .title-detail {
     font-size: 1.5rem;
     font-weight: 100;
     margin: 20px 0; }
-  /* line 166, ../sass/base.scss */
+  /* line 171, ../sass/base.scss */
   .heading-title p {
     line-height: 1.5; }
 
-/* line 171, ../sass/base.scss */
+/* line 176, ../sass/base.scss */
 .biz-section .bs-img-1 {
   margin-top: 30px;
   height: 300px;
@@ -251,7 +255,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 171, ../sass/base.scss */
+/* line 176, ../sass/base.scss */
 .biz-section .bs-img-2 {
   margin-top: 30px;
   height: 300px;
@@ -261,7 +265,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 171, ../sass/base.scss */
+/* line 176, ../sass/base.scss */
 .biz-section .bs-img-3 {
   margin-top: 30px;
   height: 300px;
@@ -271,87 +275,87 @@ h1 {
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 181, ../sass/base.scss */
+/* line 186, ../sass/base.scss */
 .three-col-list {
   width: 100%;
   list-style: none;
   overflow: hidden;
   *zoom: 1; }
-  /* line 185, ../sass/base.scss */
+  /* line 190, ../sass/base.scss */
   .three-col-list h3 {
     font-size: 2rem;
     text-align: center; }
-  /* line 189, ../sass/base.scss */
+  /* line 194, ../sass/base.scss */
   .three-col-list td {
     text-align: center; }
-  /* line 192, ../sass/base.scss */
+  /* line 197, ../sass/base.scss */
   .three-col-list .career-col {
     width: 308px;
     margin: 20px auto; }
-    /* line 195, ../sass/base.scss */
+    /* line 200, ../sass/base.scss */
     .three-col-list .career-col .career-col-text {
       margin-top: 10px;
       line-height: 1.5;
       font-weight: 200;
       text-align: justify;
       color: #666; }
-      /* line 201, ../sass/base.scss */
+      /* line 206, ../sass/base.scss */
       .three-col-list .career-col .career-col-text span {
         font-weight: 500;
         color: #333; }
 
-/* line 208, ../sass/base.scss */
+/* line 213, ../sass/base.scss */
 .three-col-list li:nth-child(3n) {
   margin-right: 0; }
 
-/* line 213, ../sass/base.scss */
+/* line 218, ../sass/base.scss */
 .career_col_left {
   background-image: url("../images/career_col_left.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 213, ../sass/base.scss */
+/* line 218, ../sass/base.scss */
 .career_col_center {
   background-image: url("../images/career_col_center.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 213, ../sass/base.scss */
+/* line 218, ../sass/base.scss */
 .career_col_right {
   background-image: url("../images/career_col_right.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto; }
 
-/* line 220, ../sass/base.scss */
+/* line 225, ../sass/base.scss */
 .access {
   padding: 30px 0; }
-  /* line 222, ../sass/base.scss */
+  /* line 227, ../sass/base.scss */
   .access .heading-title {
     font-size: 2rem;
     font-weight: 100;
     margin-top: 30px; }
-  /* line 227, ../sass/base.scss */
+  /* line 232, ../sass/base.scss */
   .access iframe {
     margin: 20px auto; }
 
-/* line 231, ../sass/base.scss */
+/* line 236, ../sass/base.scss */
 .contact-text {
   text-align: center;
   margin: 30px auto 15px;
   font-size: 2rem;
   font-weight: 200; }
 
-/* line 237, ../sass/base.scss */
+/* line 242, ../sass/base.scss */
 .contact-form {
   margin: 30px auto;
   border: 1px solid #ccc;
   border-collapse: collapse;
   width: 100%;
   max-width: 750px; }
-  /* line 245, ../sass/base.scss */
+  /* line 250, ../sass/base.scss */
   .contact-form tbody tr th {
     border: 1px solid #ccc;
     padding: 10px;
@@ -361,160 +365,160 @@ h1 {
     vertical-align: top;
     padding: 1rem;
     white-space: nowrap; }
-  /* line 255, ../sass/base.scss */
+  /* line 260, ../sass/base.scss */
   .contact-form tbody tr td {
     border: 1px solid #ccc;
     padding: 10px;
     background-color: rgba(159, 159, 159, 0.1); }
-  /* line 260, ../sass/base.scss */
+  /* line 265, ../sass/base.scss */
   .contact-form tbody tr .length-m {
     width: 50%; }
-  /* line 263, ../sass/base.scss */
+  /* line 268, ../sass/base.scss */
   .contact-form tbody tr .length-l {
     width: 98%; }
-  /* line 267, ../sass/base.scss */
+  /* line 272, ../sass/base.scss */
   .contact-form tbody .require {
     font-size: 0.8rem;
     color: red;
     padding-left: 0.5rem; }
-  /* line 272, ../sass/base.scss */
+  /* line 277, ../sass/base.scss */
   .contact-form tbody textarea {
     border: 1px solid #ccc;
     border-radius: 3px; }
 
-/* line 278, ../sass/base.scss */
+/* line 283, ../sass/base.scss */
 form {
   text-align: center; }
-  /* line 280, ../sass/base.scss */
+  /* line 285, ../sass/base.scss */
   form .wpcf7-submit {
     padding: 10px; }
 
-/* line 284, ../sass/base.scss */
+/* line 289, ../sass/base.scss */
 .entry-content {
   margin-bottom: 30px; }
 
 @media screen and (max-width: 1024px) {
-  /* line 288, ../sass/base.scss */
+  /* line 293, ../sass/base.scss */
   html {
     font-size: 12px; }
 
-  /* line 291, ../sass/base.scss */
+  /* line 296, ../sass/base.scss */
   .entry-header {
     padding: 30px 15px; }
 
-  /* line 294, ../sass/base.scss */
+  /* line 299, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element {
     height: 200px; }
-    /* line 297, ../sass/base.scss */
+    /* line 302, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .o_img_1 {
       background-image: url("../images/o_img_1_mobile.png"); }
-    /* line 297, ../sass/base.scss */
+    /* line 302, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .o_img_2 {
       background-image: url("../images/o_img_2_mobile.png"); }
 
-  /* line 302, ../sass/base.scss */
+  /* line 307, ../sass/base.scss */
   three-col-list .career-col {
     width: 100%; }
-    /* line 304, ../sass/base.scss */
+    /* line 309, ../sass/base.scss */
     three-col-list .career-col .career-col-text {
       width: 70%;
       margin: 10px auto; }
 
-  /* line 309, ../sass/base.scss */
+  /* line 314, ../sass/base.scss */
   .access {
     text-align: center; }
 
-  /* line 315, ../sass/base.scss */
+  /* line 320, ../sass/base.scss */
   .biz-section .bs-img-1 {
     background-image: url("../images/bs-img-1-tab.png");
     height: 300px;
     width: 100%; }
-  /* line 315, ../sass/base.scss */
+  /* line 320, ../sass/base.scss */
   .biz-section .bs-img-2 {
     background-image: url("../images/bs-img-2-tab.png");
     height: 300px;
     width: 100%; }
-  /* line 315, ../sass/base.scss */
+  /* line 320, ../sass/base.scss */
   .biz-section .bs-img-3 {
     background-image: url("../images/bs-img-3-tab.png");
     height: 300px;
     width: 100%; }
 
-  /* line 322, ../sass/base.scss */
+  /* line 327, ../sass/base.scss */
   .entry-content {
     width: 95%;
     margin: 0 auto 30px; } }
 @media screen and (max-width: 768px) {
-  /* line 328, ../sass/base.scss */
+  /* line 333, ../sass/base.scss */
   .articlewrap {
     width: 95%;
     margin: 0 auto; }
-    /* line 331, ../sass/base.scss */
+    /* line 336, ../sass/base.scss */
     .articlewrap .entry-content {
       margin: 0 auto 30px; } }
 @media screen and (max-width: 414px) {
-  /* line 338, ../sass/base.scss */
+  /* line 343, ../sass/base.scss */
   .access .heading-title {
     text-align: justify; }
 
-  /* line 342, ../sass/base.scss */
+  /* line 347, ../sass/base.scss */
   .contact-text {
     font-size: 1rem;
     margin: auto;
     padding: 30px 0 0; }
 
-  /* line 348, ../sass/base.scss */
+  /* line 353, ../sass/base.scss */
   .contact-form .wpcf7-form-control-wrap {
     max-width: 200px; }
-  /* line 351, ../sass/base.scss */
+  /* line 356, ../sass/base.scss */
   .contact-form .text {
     max-width: 200px; }
 
-  /* line 355, ../sass/base.scss */
+  /* line 360, ../sass/base.scss */
   .officers-profile .officers-list .o_list_element {
     height: auto; }
-    /* line 357, ../sass/base.scss */
+    /* line 362, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .officer-text {
       width: 100%; }
-    /* line 360, ../sass/base.scss */
+    /* line 365, ../sass/base.scss */
     .officers-profile .officers-list .o_list_element .officers_img {
       width: 100%;
       height: 190px;
       float: none; }
 
-  /* line 367, ../sass/base.scss */
+  /* line 372, ../sass/base.scss */
   .ct-body tr th {
     font-size: 1rem; }
-  /* line 370, ../sass/base.scss */
+  /* line 375, ../sass/base.scss */
   .ct-body tr td {
     font-size: 1rem; }
 
-  /* line 376, ../sass/base.scss */
+  /* line 381, ../sass/base.scss */
   .biz-section .bs-img-1 {
     background-image: url("../images/bs-img-1-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%; }
-  /* line 376, ../sass/base.scss */
+  /* line 381, ../sass/base.scss */
   .biz-section .bs-img-2 {
     background-image: url("../images/bs-img-2-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%; }
-  /* line 376, ../sass/base.scss */
+  /* line 381, ../sass/base.scss */
   .biz-section .bs-img-3 {
     background-image: url("../images/bs-img-3-mobile.png");
     height: 200px;
     max-width: 300px;
     width: 100%; }
 
-  /* line 386, ../sass/base.scss */
+  /* line 391, ../sass/base.scss */
   .entry-content .three-col-list td {
     display: block; }
-  /* line 389, ../sass/base.scss */
+  /* line 394, ../sass/base.scss */
   .entry-content .three-col-list .career-col {
     width: 100%; }
 
-  /* line 394, ../sass/base.scss */
+  /* line 399, ../sass/base.scss */
   .text {
     width: 100%; } }
