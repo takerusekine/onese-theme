@@ -5,6 +5,16 @@ $footercolor: #2f2d34;
 $onesegray: #9E9E9F;
 $onesepurple: #8D80BB;
 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
 @mixin box-sizing($type) {
   -webkit-box-sizing: $type;
   -moz-box-sizing: $type;
@@ -21,7 +31,10 @@ $onesepurple: #8D80BB;
   margin: 0 auto;
   max-width: 2560px;
   width: 100%;
-  height: 200px;
+  padding-top: 37px;
+  padding-bottom: 45px;
+  margin-top: 52px;
+  @include clearfix;
 }
 
 .widget-title {
@@ -41,7 +54,6 @@ $onesepurple: #8D80BB;
          display: block;
           color: #9E9E9F;
           text-decoration: none;
-          line-height: 65px;
           text-align: center;
           font-weight: 200;
       }
@@ -57,8 +69,8 @@ $onesepurple: #8D80BB;
           a {
             display: block;
             font-size: 0.8rem;
-            line-height: 30px;
             color: #9E9E9F;
+            margin-top: 20px;
           }
         }
         .current_page_item > a {
@@ -71,7 +83,7 @@ $onesepurple: #8D80BB;
 }
 
 .footertext {
-  margin: 10px auto 0;
+  margin: 0 auto;
   width: 80%;
   a {
     display: block;
