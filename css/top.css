@@ -32,7 +32,7 @@
 .accesskv,
 .contactkv {
   background-image: url("../images/keyvisual-bg.jpg");
-  background-position: 0 50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 100%;
   clear: both;
@@ -69,7 +69,7 @@
 
 /* line 89, ../sass/top.scss */
 .corpinfokv {
-  background-image: url("../images/corpinfokv-bg.png"); }
+  background-image: url("../images/corpinfokv-bg.jpg"); }
 
 /* line 92, ../sass/top.scss */
 .businesskv {

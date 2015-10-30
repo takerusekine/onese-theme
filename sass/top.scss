@@ -46,7 +46,7 @@ $layoutborder-color: #ccc;
 }
 .keyvisual {
   background-image: url("#{$img-path}keyvisual-bg.jpg");
-  background-position: 0 50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 100%;
   clear: both;
@@ -87,7 +87,7 @@ $layoutborder-color: #ccc;
   @extend .keyvisual;
 }
 .corpinfokv {
-  background-image: url("#{$img-path}corpinfokv-bg.png");
+  background-image: url("#{$img-path}corpinfokv-bg.jpg");
 }
 .businesskv {
   background-image: url("#{$img-path}businesskv.png");
