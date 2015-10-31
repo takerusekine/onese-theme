@@ -252,6 +252,40 @@ $layoutborder-color: #ccc;
   }
 }
 
+.recruit-offer {
+  width: 100%;
+  margin-top: 30px;
+  border: 5px solid $onesepurple;
+  .recruit-offer-title {
+    font-size: 2rem;
+    text-align: center;
+    background: $onesepurple;
+    padding: 10px 0;
+    color: #f3f3f3;
+
+  }
+  .recruit-content {
+    padding: 10px;
+    ul {
+      padding-left: 3rem;
+      li {
+        font-size: 2rem;
+        list-style-type: disc;
+      }
+    }
+  .career-interview {
+    max-width: 40rem;
+    display: inline-block;
+  }
+  .interview-img {
+    width: 236px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+  }
+  }
+}
+
 @media screen and (max-width:1024px) {
   .main-content-area {
     width: 95%;
@@ -279,6 +313,39 @@ $layoutborder-color: #ccc;
   .greeting-img {
     display: none;
   }
+
+  .recruit-offer {
+    width: 100%;
+    margin-top: 30px;
+    border: 5px solid $onesepurple;
+    .recruit-offer-title {
+      font-size: 2rem;
+      text-align: center;
+      background: $onesepurple;
+      padding: 10px 0;
+      color: #f3f3f3;
+
+    }
+    .recruit-content {
+      padding: 10px;
+      ul {
+        padding-left: 3rem;
+        li {
+          font-size: 2rem;
+          list-style-type: disc;
+        }
+      }
+    .career-interview {
+      max-width: 100%;
+      display: block;
+    }
+    .interview-img {
+      display: block;
+      margin: 10px auto 0;
+    }
+    }
+  }
+
   .add-margin {
     margin-top: 50px;
   }
