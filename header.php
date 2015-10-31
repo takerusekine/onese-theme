@@ -65,20 +65,24 @@
     </div>
     <?php elseif(is_page('corpinfo')): ?>
       <div class="corpinfokv">
-        <div class="innerkvtable">
-
-          <div class="innerkv">
+        <div class="kv-text">
+          <div class="kv-text-cell">
             <h1>会社概要</h1>
+            <p>
+              わたしたちの会社について
+            </p>
           </div>
         </div>
 
       </div>
       <?php elseif(is_page('business')): ?>
         <div class="businesskv">
-          <div class="innerkvtable">
-
-            <div class="innerkv">
+          <div class="kv-text">
+            <div class="kv-text-cell">
               <h1>事業内容</h1>
+              <p>
+                主力は、ケーブルテレビの営業業務です
+              </p>
             </div>
           </div>
 
@@ -86,10 +90,12 @@
         </div>
         <?php elseif(is_page('careers')): ?>
           <div class="careerkv">
-            <div class="innerkvtable">
-
-              <div class="innerkv">
+            <div class="kv-text">
+              <div class="kv-text-cell">
                 <h1>採用情報</h1>
+                <p>
+                  わたしたちの仲間になりませんか？
+                </p>
               </div>
             </div>
 
@@ -97,10 +103,12 @@
           </div>
           <?php elseif(is_page('access')):?>
             <div class="accesskv">
-              <div class="innerkvtable">
-
-                <div class="innerkv">
+              <div class="kv-text">
+                <div class="kv-text-cell">
                   <h1>アクセス</h1>
+                  <p>
+                    お気軽にご訪問ください
+                  </p>
                 </div>
               </div>
 
@@ -108,10 +116,12 @@
             </div>
             <?php elseif(is_page('contact')):?>
               <div class="contactkv">
-                <div class="innerkvtable">
-
-                  <div class="innerkv">
+                <div class="kv-text">
+                  <div class="kv-text-cell">
                     <h1>お問い合わせ</h1>
+                    <p>
+                      業務依頼・採用に関するお問い合わせもこちらから
+                    </p>
                   </div>
                 </div>
 

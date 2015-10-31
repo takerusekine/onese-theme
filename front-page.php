@@ -43,33 +43,39 @@
     <h2 class="heading-title">採用情報</h2>
     <ol class="three-col-list">
       <li class="bx-img">
+        <a href="<?php echo site_url();?>/career/">
         <span class="headerspan">営業部</span>
         <p class="bx-img-text">
           集合住宅・戸建への点検、点検告知、集合住宅・戸建へのアポ回収、導入工事手配、提案営業、オーナー管理会社対応等。
         </p>
         <p class="bx-img-text">
-            詳しくは<a href="<?php echo site_url();?>/career/">こちらから</a>
+            詳しくはこちらから
         </p>
+      </a>
       </li>
       <li class="bx-img">
+        <a href="<?php echo site_url();?>/career/">
         <span class="headerspan">正社員雇用</span>
 
         <p  class="bx-img-text">
           月給　200,000円～＋歩合給。契約社員も募集しています。
         </p>
         <p  class="bx-img-text">
-          詳しくは<a href="<?php echo site_url();?>/career/">こちらから</a>
+          詳しくはこちらから
         </p>
+        </a>
       </li>
       <li class="bx-img">
+        <a href="<?php echo site_url();?>/career/">
         <span class="headerspan">アポ回収（アルバイト）</span>
 
         <p  class="bx-img-text">
           集合住宅・戸建てへの点検告知、集合住宅・戸建へのアポ回収、テレアポ等。
         </p>
         <p  class="bx-img-text">
-          詳しくは<a href="<?php echo site_url();?>/career/">こちらから</a>
+          詳しくはこちらから
         </p>
+        </a>
       </li>
     </ol>
   </div>

@@ -45,6 +45,7 @@ p {
   margin: 0;
   font-size: 2rem;
   padding-top: 30px;
+  color: #111;
 }
 .ct-name {
   border-bottom: 1px solid $colorvar-black;
@@ -141,7 +142,7 @@ p {
   .heading-title {
     font-size: 2rem;
     margin-top: 30px;
-    padding-left: 5rem;
+    padding-left: 3rem;
     position: relative;
     font-weight: 400;
     margin-bottom: 30px;
@@ -310,8 +311,15 @@ form {
       margin: 10px auto;
     }
   }
-  .access {
+  .access{
     text-align: center;
+    .heading-title {
+      text-align: left;
+    }
+  }
+
+  .heading-title {
+    padding-left: 4rem;
   }
 
   .biz-section {
@@ -320,6 +328,7 @@ form {
         background-image: url("#{$img-path}bs-img-#{$var}-tab.png");
         height: 300px;
         width: 100%;
+        margin: auto;
       }
     }
   }

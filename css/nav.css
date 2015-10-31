@@ -1,8 +1,7 @@
-/* line 20, ../sass/nav.scss */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-/* line 23, ../sass/nav.scss */
 .topbar {
   position: fixed;
   width: 100%;
@@ -10,102 +9,105 @@
   left: 0;
   z-index: 10;
   border-bottom: 3px solid #111;
-  background: #f3f3f3; }
+  background: #f3f3f3;
+}
 
-/* line 32, ../sass/nav.scss */
 .globalNavi {
   width: 65%;
   text-align: center;
   float: left;
-  margin-left: 15%; }
-  /* line 37, ../sass/nav.scss */
-  .globalNavi ul {
-    width: 100%;
-    height: 86px;
-    margin: 0;
-    padding: 0; }
-    /* line 42, ../sass/nav.scss */
-    .globalNavi ul .current-menu-item a {
-      border-bottom: 3px solid #8e81bc; }
-  /* line 46, ../sass/nav.scss */
-  .globalNavi ul li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    float: left;
-    position: relative;
-    width: 16.66667%;
-    height: 65px;
-    line-height: 86px;
-    color: #111;
-    text-align: center;
-    font-weight: 300; }
-    /* line 59, ../sass/nav.scss */
-    .globalNavi ul li a {
-      color: #111;
-      text-decoration: none;
-      padding-bottom: 5px; }
-    /* line 64, ../sass/nav.scss */
-    .globalNavi ul li ul {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 86px;
-      z-index: 100; }
-      /* line 71, ../sass/nav.scss */
-      .globalNavi ul li ul li {
-        visibility: hidden;
-        overflow: hidden;
-        width: 100%;
-        height: 0;
-        background: #2f2d34; }
-  /* line 80, ../sass/nav.scss */
-  .globalNavi ul li:hover,
-  .globalNavi ul li a:hover {
-    color: #8e81bc; }
-  /* line 84, ../sass/nav.scss */
-  .globalNavi ul li:hover ul li,
-  .globalNavi ul li a:hover ul li {
-    visibility: visible;
-    overflow: visible;
-    height: 86px;
-    z-index: 10; }
+  margin-left: 15%;
+}
+.globalNavi ul {
+  width: 100%;
+  height: 86px;
+  margin: 0;
+  padding: 0;
+}
+.globalNavi ul .current-menu-item > a {
+  border-bottom: 3px solid #8e81bc;
+}
+.globalNavi ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  float: left;
+  position: relative;
+  width: 16.66667%;
+  height: 65px;
+  line-height: 86px;
+  color: #111;
+  text-align: center;
+  font-weight: 300;
+}
+.globalNavi ul li a {
+  color: #111;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.globalNavi ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 86px;
+  z-index: 100;
+}
+.globalNavi ul li ul li {
+  visibility: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  background: #2f2d34;
+}
+.globalNavi ul li:hover,
+.globalNavi ul li a:hover {
+  color: #8e81bc;
+}
+.globalNavi ul li:hover ul li,
+.globalNavi ul li a:hover ul li {
+  visibility: visible;
+  overflow: visible;
+  height: 86px;
+  z-index: 10;
+}
 
-/* line 92, ../sass/nav.scss */
 .globalNavi ul li .sub-menu li a {
-  color: #9e9e9f; }
-  /* line 94, ../sass/nav.scss */
-  .globalNavi ul li .sub-menu li a:hover {
-    color: #8e81bc; }
+  color: #9e9e9f;
+}
+.globalNavi ul li .sub-menu li a:hover {
+  color: #8e81bc;
+}
 
-/* line 98, ../sass/nav.scss */
 .slicknav_menu {
-  display: none; }
+  display: none;
+}
 
 @media screen and (max-width: 1024px) {
-  /* line 103, ../sass/nav.scss */
   .innertopbar .companyname {
     background-size: 100% auto;
     margin-left: 3%;
-    width: 80px; }
-  /* line 108, ../sass/nav.scss */
+    width: 80px;
+  }
   .innertopbar .globalNavi {
-    margin-left: 3%; } }
+    margin-left: 3%;
+  }
+}
 @media screen and (max-width: 414px) {
-  /* line 114, ../sass/nav.scss */
   #menu-globalnavi {
-    display: none; }
+    display: none;
+  }
 
-  /* line 117, ../sass/nav.scss */
   .slicknav_menu {
     display: block;
     position: absolute;
     left: 50%;
     top: 20%;
-    width: 50%; }
+    width: 50%;
+  }
 
-  /* line 124, ../sass/nav.scss */
   .innertopbar .companyname {
-    margin-left: 2%; } }
+    margin-left: 2%;
+  }
+}
