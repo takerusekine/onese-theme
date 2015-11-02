@@ -90,3 +90,9 @@ $color_purple: rgba(141, 128, 187, .9);
 	padding: 7px 12px;
 	height: 44px;
 }
+
+@media screen and (max-width:414px) {
+	.slicknav_menu {
+		padding: 0;
+	}
+}

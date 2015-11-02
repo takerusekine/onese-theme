@@ -21,9 +21,6 @@
 .companyname a img {
   padding: 10px 0;
 }
-.companyname a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
 
 .keyvisual, .corpinfokv,
 .businesskv,
@@ -60,11 +57,11 @@
   font-size: 1.5rem;
 }
 .kv-text-cell p .onesegray {
-  color: #9E9E9F;
+  color: #9e9e9f;
   text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff;
 }
 .kv-text-cell p .onesepurple {
-  color: #8D80BB;
+  color: #8d80bb;
   text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff;
 }
 
@@ -113,6 +110,7 @@
 .main-content-area {
   width: 960px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 .main-content-area h1,
 .main-content-area h3 {
@@ -206,14 +204,14 @@
 .businesstag, .corpinfotag, .contacttag {
   display: inline-block;
   text-align: center;
-  width: 80px;
+  width: 130px;
   border-right: 2px solid #ddd;
   border-bottom: 2px solid #ddd;
   background-color: rgba(184, 73, 255, 0.9);
   vertical-align: top;
   color: #fff;
   text-decoration: none;
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-weight: 200;
   display: block;
   line-height: 100%;
@@ -257,12 +255,12 @@
 .recruit-offer {
   width: 100%;
   margin-top: 30px;
-  border: 5px solid #8D80BB;
+  border: 5px solid #2F2D34;
 }
 .recruit-offer .recruit-offer-title {
   font-size: 2rem;
   text-align: center;
-  background: #8D80BB;
+  background: #2F2D34;
   padding: 10px 0;
   color: #f3f3f3;
 }
@@ -270,11 +268,22 @@
   padding: 10px;
 }
 .recruit-offer .recruit-content ul {
-  padding-left: 3rem;
+  padding-left: 1rem;
+}
+.recruit-offer .recruit-content ul p {
+  padding-left: 4rem;
+  margin-bottom: 2rem;
 }
 .recruit-offer .recruit-content ul li {
+  line-height: 1.5;
+  margin-bottom: 1rem;
   font-size: 2rem;
-  list-style-type: disc;
+  padding-left: 4rem;
+  list-style-type: none;
+  background-image: url("../images/recruit-list.svg");
+  background-size: auto 50%;
+  background-position: 0;
+  background-repeat: no-repeat;
 }
 .recruit-offer .recruit-content .career-interview {
   max-width: 40rem;
@@ -285,6 +294,16 @@
   display: inline-block;
   vertical-align: top;
   margin-left: 30px;
+}
+
+.recruit-section {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.right-margin {
+  margin-left: 0;
+  margin-right: 25px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -310,21 +329,18 @@
 
   .greeting {
     width: 100%;
-  }
-
-  .greeting-img {
-    display: none;
+    max-width: 50rem;
   }
 
   .recruit-offer {
     width: 100%;
     margin-top: 30px;
-    border: 5px solid #8D80BB;
+    border: 5px solid #2F2D34;
   }
   .recruit-offer .recruit-offer-title {
     font-size: 2rem;
     text-align: center;
-    background: #8D80BB;
+    background: #2F2D34;
     padding: 10px 0;
     color: #f3f3f3;
   }
@@ -333,10 +349,6 @@
   }
   .recruit-offer .recruit-content ul {
     padding-left: 3rem;
-  }
-  .recruit-offer .recruit-content ul li {
-    font-size: 2rem;
-    list-style-type: disc;
   }
   .recruit-offer .recruit-content .career-interview {
     max-width: 100%;
@@ -390,7 +402,37 @@
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .three-col-list .bx-img {
+    width: 31%;
+  }
+
+  .greeting {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .greeting-img {
+    display: none;
+  }
+}
 @media screen and (max-width: 414px) {
+  .innertopbar {
+    height: 44px;
+  }
+
+  .companyname a img {
+    padding: 0;
+    height: 44px;
+  }
+
+  .recruit-offer .recruit-content ul {
+    padding-left: 0;
+  }
+  .recruit-offer .recruit-content ul li {
+    padding-left: 4rem;
+  }
+
   .main-content-area td {
     display: block;
   }
@@ -410,6 +452,7 @@
     float: none;
     margin: 0 auto;
     margin-bottom: 50px;
+    width: 100%;
   }
 
   .three-col-list li:nth-child(3n) {
@@ -424,31 +467,41 @@
   .contactkv {
     background-image: url("../images/keyvisual-bg-mobile.jpg");
     height: 200px;
+    margin-top: 44px;
   }
 
   .corpinfokv {
     background-image: url("../images/corpinfokv-bg-mobile.jpg");
     height: 200px;
+    margin-top: 44px;
   }
 
   .businesskv {
     background-image: url("../images/businesskv-bg-mobile.jpg");
     height: 200px;
+    margin-top: 44px;
   }
 
   .careerkv {
     background-image: url("../images/careerkv-bg-mobile.jpg");
     height: 200px;
+    margin-top: 44px;
   }
 
   .accesskv {
     background-image: url("../images/accesskv-bg-mobile.jpg");
     height: 200px;
+    margin-top: 44px;
   }
 
   .contactkv {
     background-image: url("../images/contactkv-bg-mobile.jpg");
     height: 200px;
+    margin-top: 44px;
+  }
+
+  .kv-text {
+    width: 90%;
   }
 
   .kv-text-cell {

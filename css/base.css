@@ -359,7 +359,6 @@ p {
   border: 1px solid #ccc;
   border-collapse: collapse;
   width: 100%;
-  max-width: 750px;
 }
 .contact-form tbody tr th {
   border: 1px solid #ccc;
