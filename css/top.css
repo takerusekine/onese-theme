@@ -107,8 +107,13 @@
   font-size: 2rem;
 }
 
+.entry-content .main-content-area {
+  width: 100%;
+}
+
 .main-content-area {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
   padding-top: 30px;
 }
@@ -177,6 +182,7 @@
 
 .three_col_img {
   width: 100%;
+  max-width: 308px;
   height: 176px;
 }
 
@@ -321,9 +327,10 @@
   }
   .main-content-area td .bx-img {
     width: 100%;
+    max-width: 308px;
   }
   .main-content-area td .bx-img .bx-img-text {
-    width: 80%;
+    max-width: 308px;
     margin: 0.5rem auto;
   }
 
@@ -421,6 +428,10 @@
     height: 44px;
   }
 
+  .brankkv {
+    margin-top: 44px;
+  }
+
   .companyname a img {
     padding: 0;
     height: 44px;
@@ -438,6 +449,7 @@
   }
   .main-content-area td .bx-img .bx-img-text {
     width: 95%;
+    max-width: 308px;
   }
 
   .add-margin {
@@ -453,6 +465,7 @@
     margin: 0 auto;
     margin-bottom: 50px;
     width: 100%;
+    max-width: 308px;
   }
 
   .three-col-list li:nth-child(3n) {

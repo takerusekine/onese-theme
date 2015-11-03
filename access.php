@@ -1,5 +1,5 @@
 <div class="articlewrap">
-  <article>
+<article>
 
 <section class="access">
 <h2 class="heading-title">本社所在地</h2>

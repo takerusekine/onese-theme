@@ -460,7 +460,7 @@ form .wpcf7-submit {
   }
 
   .entry-content {
-    width: 95%;
+    width: 100%;
     margin: 0 auto 30px;
   }
 }
@@ -489,6 +489,12 @@ form .wpcf7-submit {
   }
   .contact-form .text {
     max-width: 200px;
+  }
+
+  .entry-header {
+    padding: 0;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .officers-profile .officers-list .o_list_element {
