@@ -1,3 +1,5 @@
+</div>
+<!-- wrapperクラスここまで -->
 <footer class="footer">
   <?php dynamic_sidebar('フッター１'); ?>
   <div class="footertext">

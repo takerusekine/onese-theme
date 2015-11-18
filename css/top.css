@@ -49,6 +49,7 @@
 .kv-text-cell {
   display: table-cell;
   vertical-align: middle;
+  text-shadow: 0px 0px 5rem black;
 }
 .kv-text-cell p {
   text-align: center;
@@ -58,11 +59,9 @@
 }
 .kv-text-cell p .onesegray {
   color: #9e9e9f;
-  text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff;
 }
 .kv-text-cell p .onesepurple {
   color: #8d80bb;
-  text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff;
 }
 
 .corpinfokv {
