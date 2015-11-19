@@ -422,18 +422,19 @@
     display: none;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
   .innertopbar {
-    height: 44px;
+    height: 47px;
+    width: 100%;
   }
 
   .brankkv {
-    margin-top: 44px;
+    margin-top: 47px;
   }
 
   .companyname a img {
     padding: 0;
-    height: 44px;
+    height: 47px;
   }
 
   .recruit-offer .recruit-content ul {

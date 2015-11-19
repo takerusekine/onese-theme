@@ -14,8 +14,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-1.11.3.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.min.js"></script>
   <script src="<?php bloginfo('template_url');?>/js/modernizr-custom.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/func.js"></script>
-  <script src="<?php bloginfo('template_url');?>/js/jquery.slicknav.js"></script>
+  
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
