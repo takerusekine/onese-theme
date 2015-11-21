@@ -8,7 +8,4 @@ Author URI: http://bulluck.co.jp
 Version:1.0
 */
 
-@import url(css/base.css);
-@import url(css/nav.css);
-@import url(css/top.css);
-@import url(css/footer.css);
+@import url(css/main.css);

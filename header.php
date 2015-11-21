@@ -50,7 +50,6 @@
       </div>
     </div>
   </div>
-<div class="wrapper">
   <?php if (is_front_page()): ?>
     <div class="keyvisual">
       <div class="kv-text">

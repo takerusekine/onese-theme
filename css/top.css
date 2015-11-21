@@ -30,7 +30,7 @@
   background-image: url("../images/keyvisual-bg.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   clear: both;
   height: 300px;
   margin-top: 86px;
