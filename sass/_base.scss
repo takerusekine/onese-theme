@@ -5,7 +5,7 @@ $rootfontsize: 16px;
 $colorvar-black: #111;
 $img-path: '../images/';
 $onesegray: #9E9E9F;
-$onesepurple: #8D80BB ;
+$onesepurple: #8D80BB;
 @mixin box-sizing($type) {
   -webkit-box-sizing: $type;
   -moz-box-sizing: $type;
@@ -27,30 +27,24 @@ body {
   font-weight: 300;
   background-color: #f3f3f3;
 }
-
-
 h1 {
   font-size: 3rem;
   color: #fff;
 }
-
 h3 {
   font-size: 2rem;
   font-weight: 100;
   margin-bottom: 30px;
 }
-
 p {
   line-height: 1.5;
 }
-
 .wrapper {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
   overflow: hidden;
 }
-
 .articlewrap {
   margin: 0 auto;
   width: 960px;
@@ -67,7 +61,7 @@ p {
   font-size: 2rem;
   padding-bottom: 10px;
   width: 95%;
-  margin: 50px auto 0;
+  margin: 80px auto 0;
 }
 .corp-table {
   width: 95%;
@@ -87,7 +81,7 @@ p {
     }
     td {
       font-size: 1.2rem;
-      line-height: 100%;
+      line-height: normal;
       width: 70%;
       padding: 10px;
     }
@@ -135,7 +129,7 @@ p {
 }
 @for $value from 1 through 3 {
   .o_img_#{$value} {
-    background-image: url("#{$img-path}o_img_#{$value}.png");
+    background-image: url(#{$img-path}o_img_#{$value}.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -152,17 +146,19 @@ p {
 }
 .biz-section {
   padding: 30px 0;
-   h3 {
+  h3 {
     line-height: normal;
-}
   }
-  .heading-title {
-    font-size: 2rem;
-    margin-top: 30px;
-    padding-left: 3rem;
-    position: relative;
-    font-weight: 400;
-    margin-bottom: 30px;
+  h3.heading-title {
+    &::before {
+      content: "";
+      position: absolute;
+      border: 5px solid #9E9E9F;
+      width: 20px;
+      height: 20px;
+      left: 10px;
+      top: 13px;
+    }
     &::after {
       border: 5px solid #9184C1;
       width: 20px;
@@ -170,17 +166,35 @@ p {
       content: "";
       position: absolute;
       left: 0;
-      top: -5px;
+      top: 3px;
     }
-    &::before {
-      content: "";
-      position: absolute;
-      border: 5px solid #9E9E9F;
-      width: 20px;
-      height: 20px;
-      top: 5px;
-      left: 10px;
-    }
+  }
+}
+.heading-title {
+  font-size: 2rem;
+  margin-top: 30px;
+  padding-left: 3rem;
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 30px;
+  &::after {
+    border: 5px solid #9184C1;
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    border: 5px solid #9E9E9F;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 10px;
+  }
   .title-detail {
     font-size: 1.5rem;
     font-weight: 100;
@@ -195,7 +209,7 @@ p {
     margin-top: 30px;
     height: 300px;
     width: 100%;
-    background-image: url("#{$img-path}bs-img-#{$value}.png");
+    background-image: url(#{$img-path}bs-img-#{$value}.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -234,7 +248,7 @@ p {
 $nameList: left, center, right;
 @each $name in $nameList {
   .career_col_#{$name} {
-    background-image: url("#{$img-path}career_col_#{$name}.png");
+    background-image: url(#{$img-path}career_col_#{$name}.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -316,7 +330,7 @@ form {
     height: 200px;
     @for $var from 1 through 2 {
       .o_img_#{$var} {
-        background-image: url("#{$img-path}o_img_#{$var}_mobile.png");
+        background-image: url(#{$img-path}o_img_#{$var}_mobile.png);
       }
     }
   }
@@ -327,21 +341,19 @@ form {
       margin: 10px auto;
     }
   }
-  .access{
+  .access {
     text-align: center;
     .heading-title {
       text-align: left;
     }
   }
-
   .heading-title {
     padding-left: 4rem;
   }
-
   .biz-section {
     @for $var from 1 through 3 {
       .bs-img-#{$var} {
-        background-image: url("#{$img-path}bs-img-#{$var}-tab.png");
+        background-image: url(#{$img-path}bs-img-#{$var}-tab.png);
         height: 300px;
         width: 100%;
         margin: auto;
@@ -386,7 +398,6 @@ form {
     width: 95%;
     margin: 0 auto;
   }
-
   .officers-profile .officers-list .o_list_element {
     height: auto;
     .officer-text {
@@ -409,7 +420,7 @@ form {
   .biz-section {
     @for $var from 1 through 3 {
       .bs-img-#{$var} {
-        background-image: url("#{$img-path}bs-img-#{$var}-mobile.png");
+        background-image: url(#{$img-path}bs-img-#{$var}-mobile.png);
         height: 200px;
         max-width: 300px;
         width: 100%;

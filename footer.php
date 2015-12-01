@@ -1,3 +1,10 @@
+<?php if (!is_page('contact')): ?>
+<div class="exit">
+  <a href="<?php echo home_url('/');?>contact/">
+    <img src="<?php bloginfo('template_directory');?>/images/onese-exit.png" alt="exitボタン" />
+  </a>
+</div>
+<?php endif; ?>
 <footer class="footer">
   <?php dynamic_sidebar('フッター１'); ?>
   <div class="footertext">

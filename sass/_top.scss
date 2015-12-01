@@ -41,7 +41,7 @@ $layoutborder-color: #ccc;
   }
 }
 .keyvisual {
-  background-image: url("#{$img-path}keyvisual-bg.jpg");
+  background-image: url(#{$img-path}keyvisual-bg.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +61,7 @@ $layoutborder-color: #ccc;
 .kv-text-cell {
   display: table-cell;
   vertical-align: middle;
-  text-shadow: 0px 0px 1rem black;
+  text-shadow: 0 0 1rem black;
   p {
     text-align: center;
     color: #fff;
@@ -69,7 +69,6 @@ $layoutborder-color: #ccc;
     font-size: 1.5rem;
     .onesegray {
       color: $onesegray;
-
     }
     .onesepurple {
       color: $onesepurple;
@@ -84,19 +83,19 @@ $layoutborder-color: #ccc;
   @extend .keyvisual;
 }
 .corpinfokv {
-  background-image: url("#{$img-path}corpinfokv-bg.jpg");
+  background-image: url(#{$img-path}corpinfokv-bg.jpg);
 }
 .businesskv {
-  background-image: url("#{$img-path}businesskv-bg.jpg");
+  background-image: url(#{$img-path}businesskv-bg.jpg);
 }
 .careerkv {
-  background-image: url("#{$img-path}careerkv-bg.jpg");
+  background-image: url(#{$img-path}careerkv-bg.jpg);
 }
 .accesskv {
-  background-image: url("#{$img-path}accesskv-bg.jpg");
+  background-image: url(#{$img-path}accesskv-bg.jpg);
 }
 .contactkv {
-  background-image: url("#{$img-path}contactkv-bg.jpg");
+  background-image: url(#{$img-path}contactkv-bg.jpg);
 }
 .brankkv {
   height: 0;
@@ -121,7 +120,6 @@ $layoutborder-color: #ccc;
 .entry-content .main-content-area {
   width: 100%;
 }
-
 .main-content-area {
   width: 100%;
   max-width: 960px;
@@ -149,15 +147,41 @@ $layoutborder-color: #ccc;
     margin-top: 0;
     line-height: normal;
   }
+   h3.heading-title{
+  &::before {
+    content: "";
+    position: absolute;
+    border: 5px solid #9E9E9F;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 13px;
+  }
+   &::after{
+     border: 5px solid #9184C1;
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+   }
+  }
+
+
 }
 .greeting-img {
   display: inline-block;
   width: 30%;
-  vertical-align: bottom;
+  vertical-align: top;
   border: 1px solid #ccc;
   margin-left: 25px;
   height: 280px;
 }
+.vert-bottom {
+  vertical-align: bottom;
+}
+
 .three-col-list {
   width: 100%;
   list-style: none;
@@ -187,18 +211,18 @@ $layoutborder-color: #ccc;
   height: 176px;
 }
 .three_col_left {
-  background-image: url("#{$img-path}three-col-left.jpg");
+  background-image: url(#{$img-path}three-col-left.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto;
 }
 .three_col_center {
   @extend .three_col_left;
-  background-image: url("#{$img-path}three-col-center.jpg");
+  background-image: url(#{$img-path}three-col-center.jpg);
 }
 .three_col_right {
   @extend .three_col_left;
-  background-image: url("#{$img-path}three_col_right.png");
+  background-image: url(#{$img-path}three_col_right.png);
 }
 .headerspan {
   font-weight: 500;
@@ -256,8 +280,9 @@ $layoutborder-color: #ccc;
 }
 .recruit-offer {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 4rem;
   border: 5px solid #2F2D34;
+  background-color: rgb(255, 255, 255);
   .recruit-offer-title {
     font-size: 2rem;
     text-align: center;
@@ -267,17 +292,34 @@ $layoutborder-color: #ccc;
   }
   .recruit-content {
     padding: 10px;
+    margin-top: 2rem;
     dl {
       padding-left: 1rem;
       dd {
         margin-bottom: 2rem;
+        color: #666;
+        padding: 0 2rem;
+        line-height: normal;
       }
       dt {
         line-height: 1.5;
         margin-bottom: 1rem;
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: 500;
         list-style-type: none;
+        color: #2E3192;
+        position: relative;
+        padding-left: 2rem;
+        &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          border: 3px solid #2F2D34;
+          background: #2F2D34;
+          top: 18px;
+          left: 0;
+        }
       }
     }
     .career-interview {
@@ -315,7 +357,7 @@ $layoutborder-color: #ccc;
         width: 100%;
         max-width: 308px;
         .bx-img-text {
-          max-width:308px;
+          max-width: 308px;
           margin: 0.5rem auto;
         }
       }
@@ -357,7 +399,7 @@ $layoutborder-color: #ccc;
   $kvList: keyvisual, corpinfokv, businesskv, careerkv, accesskv, contactkv;
   @each $kvname in $kvList {
     .#{$kvname} {
-      background-image: url("#{$img-path}#{$kvname}-bg-tab.jpg");
+      background-image: url(#{$img-path}#{$kvname}-bg-tab.jpg);
     }
   }
   .innerkvtable {
@@ -386,7 +428,6 @@ $layoutborder-color: #ccc;
   }
 }
 @media screen and (max-width:600px) {
-
   .innertopbar {
     height: 47px;
     width: 100%;
@@ -394,23 +435,20 @@ $layoutborder-color: #ccc;
   .brankkv {
     margin-top: 47px;
   }
-
   .companyname a img {
     padding: 0;
     height: 47px;
   }
-
   .recruit-offer {
     .recruit-content {
       ul {
         padding-left: 0;
-      li {
-        padding-left: 4rem;
-      }
+        li {
+          padding-left: 4rem;
+        }
       }
     }
   }
-
   .main-content-area td {
     display: block;
     .bx-img .bx-img-text {
@@ -438,19 +476,73 @@ $layoutborder-color: #ccc;
   $kvList: keyvisual, corpinfokv, businesskv, careerkv, accesskv, contactkv;
   @each $kvname in $kvList {
     .#{$kvname} {
-      background-image: url("#{$img-path}#{$kvname}-bg-mobile.jpg");
+      background-image: url(#{$img-path}#{$kvname}-bg-mobile.jpg);
       height: 200px;
-      margin-top:44px;
+      margin-top: 44px;
     }
   }
   .kv-text {
     width: 90%;
   }
-
   .kv-text-cell {
     text-align: center;
   }
   .innerkvtable {
     height: 200px;
+  }
+  .recruit-offer {
+    width: 100%;
+    margin-top: 4rem;
+    border: 5px solid #2F2D34;
+    background-color: rgb(255, 255, 255);
+    .recruit-offer-title {
+      font-size: 2rem;
+      text-align: center;
+      background: #2F2D34;
+      padding: 10px 0;
+      color: #f3f3f3;
+    }
+    .recruit-content {
+      padding: 10px;
+      margin-top: 2rem;
+      dl {
+        padding-left: 1rem;
+        dd {
+          margin-bottom: 2rem;
+          color: #666;
+          padding: 0 2rem;
+        }
+        dt {
+          line-height: 1.5;
+          margin-bottom: 1rem;
+          font-size: 2rem;
+          font-weight: 500;
+          list-style-type: none;
+          color: #2E3192;
+          position: relative;
+          padding-left: 2rem;
+          &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            border: 3px solid #2F2D34;
+            background: #2F2D34;
+            top: 10px;
+            left: 0;
+          }
+        }
+      }
+      .career-interview {
+        max-width: 40rem;
+        display: inline-block;
+      }
+      .interview-img {
+        width: 236px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 30px;
+      }
+    }
   }
 }
