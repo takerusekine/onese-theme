@@ -449,6 +449,9 @@ $layoutborder-color: #ccc;
       }
     }
   }
+
+
+
   .main-content-area td {
     display: block;
     .bx-img .bx-img-text {
@@ -478,7 +481,7 @@ $layoutborder-color: #ccc;
     .#{$kvname} {
       background-image: url(#{$img-path}#{$kvname}-bg-mobile.jpg);
       height: 200px;
-      margin-top: 44px;
+      margin-top: 0;
     }
   }
   .kv-text {
