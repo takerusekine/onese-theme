@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="section" id="topcontent">
   <div class="main-content-area">
-    <h2 class="heading-title">About Onese</h2>
+    <h2 class="heading-title">about onese</h2>
     <ol class="three-col-list">
       <li class="bx-img">
         <a href="<?php echo site_url();?>/business/">
