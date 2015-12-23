@@ -319,6 +319,16 @@ form {
 .entry-content {
   margin-bottom: 30px;
 }
+
+.decrease-size {
+    font-size: 75%;
+    padding-right: 5px;
+}
+
+.js-height {
+  max-height: 700px;
+}
+
 @media screen and (max-width:1024px) {
   html {
     font-size: 12px;

@@ -51,7 +51,7 @@
     </div>
   </div>
   <?php if (is_front_page()): ?>
-    <div class="keyvisual">
+    <div class="keyvisual js-height">
       <div class="kv-text">
         <div class="kv-text-cell">
           <h1>ひとつのセンスで全てを幸せに…</h1>
