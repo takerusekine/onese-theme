@@ -17,10 +17,10 @@ $onesepurple: #8D80BB;
   @include box-sizing(border-box);
 }
 html {
-  font-family: 'Noto Sans Japanese', sans-serif;
   font-size: $rootfontsize;
 }
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   max-width: 2560px;
   width: 100%;

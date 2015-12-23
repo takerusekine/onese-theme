@@ -25,7 +25,7 @@
   </title>
 
   <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/normalize.min.css">
-  <link href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
   <?php wp_head();?>
 
