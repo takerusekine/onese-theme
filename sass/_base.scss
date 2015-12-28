@@ -59,14 +59,14 @@ p {
   border-bottom: 1px solid $colorvar-black;
   display: block;
   font-size: 2rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   width: 95%;
-  margin: 80px auto 0;
+  margin: 90px 0 15px;
 }
 .corp-table {
   width: 95%;
   border-style: none;
-  margin: 0 auto 30px;
+  margin: 0 auto 90px;
 }
 .ct-body {
   width: 100%;
@@ -129,7 +129,7 @@ p {
 }
 @for $value from 1 through 3 {
   .o_img_#{$value} {
-    background-image: url(#{$img-path}o_img_#{$value}.png);
+    background-image: url('#{$img-path}o_img_#{$value}.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -145,13 +145,12 @@ p {
   border-style: none;
 }
 .biz-section {
-  padding: 30px 0;
   h3 {
     line-height: normal;
   }
   h3.heading-title {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       border: 5px solid #9E9E9F;
       width: 20px;
@@ -163,7 +162,7 @@ p {
       border: 5px solid #9184C1;
       width: 20px;
       height: 20px;
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 3px;
@@ -176,18 +175,18 @@ p {
   padding-left: 3rem;
   position: relative;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   &::after {
     border: 5px solid #9184C1;
     width: 20px;
     height: 20px;
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: -5px;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     border: 5px solid #9E9E9F;
     width: 20px;
@@ -204,17 +203,33 @@ p {
     line-height: 1.5;
   }
 }
+
+.title-detail {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
 @for $value from 1 through 3 {
   .biz-section .bs-img-#{$value} {
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 90px;
     height: 300px;
     width: 100%;
-    background-image: url(#{$img-path}bs-img-#{$value}.png);
+    background-image: url('#{$img-path}bs-img-#{$value}.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto;
   }
 }
+
+.biz-section .bs-img-2 {
+  height: 400px;
+}
+
+.bottom-buffer60 {
+  padding-bottom: 60px;
+}
+
 .three-col-list {
   width: 100%;
   list-style: none;
@@ -248,21 +263,19 @@ p {
 $nameList: left, center, right;
 @each $name in $nameList {
   .career_col_#{$name} {
-    background-image: url(#{$img-path}career_col_#{$name}.png);
+    background-image: url('#{$img-path}career_col_#{$name}.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: auto;
   }
 }
 .access {
-  padding: 30px 0;
+  margin-bottom: 90px;
   .heading-title {
     font-size: 2rem;
-    margin-top: 30px;
+    margin-top: 90px;
   }
-  iframe {
-    margin: 20px auto;
-  }
+
 }
 .contact-text {
   text-align: center;
@@ -318,17 +331,15 @@ form {
 }
 .entry-content {
   margin-bottom: 30px;
+  margin-top: 90px;
 }
-
 .decrease-size {
-    font-size: 75%;
-    padding-right: 5px;
+  font-size: 75%;
+  padding-right: 5px;
 }
-
 .js-height {
   max-height: 700px;
 }
-
 @media screen and (max-width:1024px) {
   html {
     font-size: 12px;
@@ -340,7 +351,7 @@ form {
     height: 200px;
     @for $var from 1 through 2 {
       .o_img_#{$var} {
-        background-image: url(#{$img-path}o_img_#{$var}_mobile.png);
+        background-image: url('#{$img-path}o_img_#{$var}_mobile.png');
       }
     }
   }
@@ -363,7 +374,7 @@ form {
   .biz-section {
     @for $var from 1 through 3 {
       .bs-img-#{$var} {
-        background-image: url(#{$img-path}bs-img-#{$var}-tab.png);
+        background-image: url('#{$img-path}bs-img-#{$var}-tab.png');
         height: 300px;
         width: 100%;
         margin: auto;
@@ -373,6 +384,9 @@ form {
   .entry-content {
     width: 100%;
     margin: 0 auto 30px;
+  }
+  .js-height {
+    max-height: 300px;
   }
 }
 @media screen and (max-width:768px) {
@@ -385,6 +399,9 @@ form {
   }
 }
 @media screen and (max-width:414px) {
+  .js-height {
+    max-height: 200px;
+  }
   .access {
     .heading-title {
       text-align: justify;
@@ -430,7 +447,7 @@ form {
   .biz-section {
     @for $var from 1 through 3 {
       .bs-img-#{$var} {
-        background-image: url(#{$img-path}bs-img-#{$var}-mobile.png);
+        background-image: url('#{$img-path}bs-img-#{$var}-mobile.png');
         height: 200px;
         max-width: 300px;
         width: 100%;

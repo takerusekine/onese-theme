@@ -24,10 +24,10 @@ $onesepurple: #8D80BB;
   background: $footercolor;
   color: #fff;
   margin: 0 auto;
+  margin-top: 90px;
   max-width: 2560px;
   width: 100%;
-  padding-top: 37px;
-  padding-bottom: 45px;
+  padding: 60px 0;
   @include clearfix;
 }
 .exit {
@@ -36,7 +36,6 @@ $onesepurple: #8D80BB;
   width: 100%;
   img {
     width: 100%;
-    margin: 3rem 0 4rem;
   }
 }
 .widget-title {
@@ -90,6 +89,9 @@ $onesepurple: #8D80BB;
     display: block;
     float: right;
     margin-right: 3%;
+    img {
+      margin-top: 30px;
+    }
   }
   .copyright {
     display: block;

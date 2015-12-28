@@ -1,7 +1,7 @@
 <?php if (!is_page('contact')): ?>
 <div class="exit">
   <a href="<?php echo home_url('/');?>contact/">
-    <img src="<?php bloginfo('template_directory');?>/images/onese-exit.png" alt="exitボタン" />
+    <img src="<?php bloginfo('template_directory');?>/images/onese-exit3.png" alt="exitボタン" />
   </a>
 </div>
 <?php endif; ?>
